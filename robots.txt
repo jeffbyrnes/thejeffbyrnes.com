@@ -1,0 +1,18 @@
+# www.robotstxt.org/
+# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+Disallow: /feed/
+Disallow: /trackback/
+Disallow: /cgi-bin/
+Disallow: /wp/wp-admin/
+Disallow: /wp/wp-content/
+Disallow: /wp/wp-includes/
+Disallow: /wp/xmlrpc.php
+Disallow: /wp/wp-
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /blackhole/
+
+Sitemap: http://www.jeffbyrnes.net/sitemap.xml.gz
