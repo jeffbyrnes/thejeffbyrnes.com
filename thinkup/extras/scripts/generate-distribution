@@ -1,0 +1,39 @@
+#! /bin/bash
+
+# Assume we're running this script from the root thinkup directory
+
+# Create build directory if it doesn't exist
+build="build"
+if [ ! -d "$build" ]; then
+  mkdir build
+fi
+
+# Copy the webapp folder to build
+cp -R webapp build/.
+
+# Rename it thinkup
+mv build/webapp build/thinkup
+
+# Add files we want included
+cp -R COPYING build/thinkup/.
+cp -R README.md build/thinkup/.
+
+# Clean out stuff we don't need (tests, test_installer, compiled templates, config file)
+rm -rf build/thinkup/test_installer/
+rm -rf build/thinkup/_lib/view/compiled_view/*.tpl.php
+rm -rf build/thinkup/_lib/view/compiled_view/upgrade_token
+rm -rf build/thinkup/_lib/view/compiled_view/latest_email
+rm -rf build/thinkup/_lib/view/compiled_view/cache/*.tpl
+rm -rf build/thinkup/_lib/extlib/simpletest/
+rm -rf build/thinkup/plugins/*/tests/
+rm build/thinkup/config.inc.php
+
+# Clean out dev/alpha plugins which shouldn't go to users
+rm -rf build/thinkup/plugins/hellothinkup/
+rm -rf build/thinkup/plugins/twitterrealtime/
+
+# Zip it up
+cd build/
+zip -r thinkup.zip thinkup 
+zip -d thinkup.zip __MACOSX* *.DS_Store *.ecoder_permissions_check.txt
+rm -rf thinkup 
