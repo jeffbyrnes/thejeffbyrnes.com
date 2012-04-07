@@ -8,17 +8,11 @@
 <head>
     <meta charset="utf-8">
 
-    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-             More info: h5bp.com/i/378 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <title></title>
+    <title>Jeff Byrnes, web developer, bassist, Mac Tech</title>
     <meta name="description" content="">
 
     <!-- Mobile viewport optimized: h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -33,18 +27,22 @@
     <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
              chromium.org/developers/how-tos/chrome-frame-getting-started -->
     <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-    <header>
+    <header class="site-header">
+        <img src="/img/avatar.png" alt="Jeff Byrnes' avatar">
+
         <hgroup>
             <h1>Hey there, I’m Jeff Byrnes</h1>
-            <h2>I‘m a web developer, bassist, and Mac Tech.</h2>
+            <h2>I’m a web developer, bassist, and Mac Tech.</h2>
         </hgroup>
 
-        <ul class="social-links">
-            <li><a href="http://www.facebook.com/jeffbyrnes" title="Facebook">Facebook</a></li>
-            <li><a href="http://twitter.com/berkleebassist" title="Follow me on Twitter">Twitter</a></li>
-            <li><a href="http://www.flickr.com/photos/berkleebassist/" title="Photos on Flickr">Flickr</a></li>
-            <li><a href="http://github.com/jeffbyrnes" title="Github">Github</a></li>
-        </ul><!-- end .social-links -->
+        <nav>
+            <ul class="social-links clearfix">
+                <li><a class="ir" id="social-facebook" href="http://www.facebook.com/jeffbyrnes" title="Facebook">Facebook</a></li>
+                <li><a class="ir" id="social-twitter" href="http://twitter.com/berkleebassist" title="Follow me on Twitter">Twitter</a></li>
+                <li><a class="ir" id="social-flickr" href="http://www.flickr.com/photos/berkleebassist/" title="Photos on Flickr">Flickr</a></li>
+                <li><a class="ir" id="social-github" href="http://github.com/jeffbyrnes" title="Github">Github</a></li>
+            </ul><!-- end .social-links -->
+        </nav>
     </header>
     <div role="main">
         <p class="blurb">Based in Boston since 2002, I attended <a href="http://www.berklee.edu/">Berklee</a>, playing both upright and electric bass.<br>While at school, I ended up gravitating to tech, becoming a developer by the time I finished. I’m also a <a href="www.couchsurfing.org/people/jeffbyrnes/">CouchSurfer</a> and a SCUBA diver.</p>
@@ -132,5 +130,7 @@
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

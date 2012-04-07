@@ -1,4 +1,17 @@
-@import "h5bp-normalize.scss";
+/* Colors */
+$dark-blue:         #3f5063;
+$grey-brown:        #7a7365;
+$orange:            #f27d00;
+$red:               #e53600;
+$medium-blue:       #37669e;
+$light-blue:        #4783cc;
+$faded-medium-blue: #99b1cc;
+$faded-light-blue:  #cfd9e6;
+$medium-grey:       #d6d6d4;
+$light-grey:        #e4e3e0;
+
+@import "webfonts";
+@import "h5bp-normalize";
 
 
 /* ==|== primary styles =====================================================
@@ -7,16 +20,73 @@
 
 body {
     margin: 0 auto;
-    width: 940px;
+    text-align: center;
+    width: 98%;
+    max-width: 940px;
 }
 
+.site-header {
+    background: url(/img/collage.png) no-repeat -2px bottom;
+    border-bottom: 4px solid $red;
+    padding-bottom: 235px;
+}
 
+.site-header h1,
+.site-header h2 {
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+}
 
+.site-header h1 {
+    color: $dark-blue;
+    font-family: OpenSansLight;
+    font-size: 80px;
+    margin: 39px 0 5px;
+}
 
+.site-header h2 {
+    color: $orange;
+    font-family: MuseoSlab500;
+    font-size: 24px;
+    margin: 5px 0 29px;
+}
 
+.social-links {
+    border-top: 2px solid #deddda;
+    margin: 0 auto;
+    padding: 18px 10px 0;
+    width: 148px;
+}
 
+.social-links li {
+    float: left;
+}
 
+.social-links a {
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 8px;
+    width: 31px;
+    height: 32px;
+}
 
+#social-facebook {
+    background-image: url(/img/facebook.png);
+}
+
+#social-twitter {
+    background-image: url(/img/twitter.png);
+}
+
+#social-flickr {
+    background-image: url(/img/flickr.png);
+}
+
+#social-github {
+    background-image: url(/img/github.png);
+    margin-right: 0;
+}
 
 
 
@@ -25,3 +95,4 @@ body {
 @import "h5bp-media-queries";
 @import "h5bp-helpers";
 @import "h5bp-print";
+
