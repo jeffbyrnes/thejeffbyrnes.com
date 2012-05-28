@@ -475,6 +475,7 @@ body {
   background: url(/img/collage.png) no-repeat -2px bottom;
   border-bottom: 4px solid #e53600;
   padding-bottom: 235px;
+  margin-bottom: 27px;
 }
 
 /* line 35, ../_scss/style.scss */
