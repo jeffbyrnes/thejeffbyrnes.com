@@ -106,7 +106,7 @@ html, button, input, select, textarea {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-normalize\.scss}line{font-family:\0000337}}
 body {
   margin: 0;
-  font-size: 1em;
+  font-size: 15px;
   line-height: 1.4;
 }
 
@@ -462,47 +462,78 @@ td {
 /* ==|== primary styles =====================================================
    Author: Jeff Byrnes
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000321}}
-body {
-  margin: 0 auto;
-  text-align: center;
-  width: 98%;
-  max-width: 940px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000328}}
-.site-header {
-  background: url(/img/collage.png) no-repeat -2px bottom;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000330}}
+html {
+  background: url(/img/bg-noise.jpg) repeat center top;
   border-bottom: 4px solid #e53600;
-  padding-bottom: 235px;
-  margin-bottom: 27px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000336}}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 940px;
+}
+
+/**
+ * Very topmost & bottomost image elements, mostly backgrounds
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000347}}
+.header-image,
+.footer-image {
+  background: url(/img/bg-lines.png) repeat center top;
+  text-align: center;
+  height: 55px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000353}}
+.footer-image {
+  margin-top: 60px;
+}
+
+/**
+ * Main site background, w/ intro text
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000360}}
+.site-header {
+  background-repeat: no-repeat;
+  background-position: -2px bottom;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  border-bottom: 4px solid #e53600;
+  margin-bottom: 27px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000370}}
 .site-header h1,
-.site-header h2 {
+.site-header h2,
+.skills h1 {
   font-family: sans-serif;
   font-weight: normal;
   line-height: 1.2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000376}}
 .site-header h1 {
   color: #3f5063;
   font-family: OpenSansLight;
   font-size: 80px;
-  margin: 39px 0 5px;
+  margin: 45px 0 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000349}}
-.site-header h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000384}}
+.site-header h2,
+.skills h1 {
   color: #f27d00;
   font-family: MuseoSlab500;
   font-size: 24px;
   margin: 5px 0 29px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000391}}
 .social-links {
   border-top: 2px solid #deddda;
   margin: 0 auto;
@@ -510,39 +541,108 @@ body {
   width: 148px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000398}}
 .social-links li {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000367}}
-.social-links a {
-  background-repeat: no-repeat;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003102}}
+.social-link {
   display: block;
   margin-right: 8px;
   width: 31px;
   height: 32px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000375}}
-#social-facebook {
-  background-image: url(/img/facebook.png);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003110}}
+.social-link:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003114}}
 #social-twitter {
-  background-image: url(/img/twitter.png);
+  background-position: -38px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003118}}
 #social-flickr {
-  background-image: url(/img/flickr.png);
+  background-position: -77px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003122}}
 #social-github {
-  background-image: url(/img/github.png);
+  background-position: -116px 0;
   margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003127}}
+.main {
+  line-height: 1.533;
+}
+
+/**
+ * Skills
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003134}}
+.skills {
+  background-color: #f8f8f5;
+  margin: 52px 0 0;
+  padding: 37px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003140}}
+.skills h1 {
+  margin-bottom: 34px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003144}}
+.skills ul {
+  list-style: none;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  height: 25px;
+  min-width: 36.17%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003154}}
+.skills li {
+  color: #e53600;
+  font-family: MuseoSlab700;
+  font-size: 14px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003161}}
+.skills li:after {
+  color: #bfbfbb;
+  content: "•";
+  margin: 0 6px 0 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003167}}
+.skills li:last-child:after {
+  content: "";
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003172}}
+.skills p {
+  clear: both;
+  margin: 2px 0 32px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/style\.scss}line{font-family:\00003177}}
+.button {
+  display: block;
 }
 
 /* ==|== media queries ======================================================
@@ -550,8 +650,63 @@ body {
    This example overrides the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-device-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\000039}}
+  .site-header {
+    background-image: url(/img/collage-318x96@2x.png);
+    padding-bottom: 112px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000314}}
+  .social-link {
+    background: url(/img/social-icons@2x.png) no-repeat 0 0;
+    background-size: 147px 32px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000320}}
+  .site-header h1 {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-device-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000327}}
+  .site-header {
+    background-image: url(/img/collage.png);
+    padding-bottom: 235px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000332}}
+  .social-link {
+    background: url(/img/social-icons.png) no-repeat 0 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000337}}
+  .skills ul:before,
+  .skills ul:after {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000344}}
+  .skills ul:before,
+  .skills ul:after {
+    background-image: url(/img/bg-lines.png);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 27.66%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000353}}
+  .skills ul:before {
+    left: 4.255%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffbyrnes\/Sites\/jeffbyrnes\/jeffbyrn\.es\/_scss\/_h5bp-media-queries\.scss}line{font-family:\0000357}}
+  .skills ul:after {
+    right: 4.255%;
+  }
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

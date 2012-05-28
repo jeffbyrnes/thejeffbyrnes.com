@@ -4,6 +4,58 @@
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+// iPhone
+@media only screen and (max-device-width: 480px) {
+    .site-header {
+        background-image: url(/img/collage-318x96@2x.png);
+        padding-bottom: 112px;
+    }
+
+    .social-link {
+        background: url(/img/social-icons@2x.png) no-repeat 0 0;
+        background-size: 147px 32px;
+    }
+
+
+    .site-header h1 {
+        font-size: 48px;
+    }
+}
+
+// iPad
+@media only screen and (min-device-width: 768px) {
+    .site-header {
+        background-image: url(/img/collage.png);
+        padding-bottom: 235px;
+    }
+
+    .social-link {
+        background: url(/img/social-icons.png) no-repeat 0 0;
+    }
+
+    .skills ul:before,
+    .skills ul:after {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .skills ul:before,
+    .skills ul:after {
+        background-image: url(/img/bg-lines.png);
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: percentage($pattern-width / $total-width);
+    }
+
+    .skills ul:before {
+        left: percentage($pattern-margin / $total-width);
+    }
+
+    .skills ul:after {
+        right: percentage($pattern-margin / $total-width);
+    }
+
 }
