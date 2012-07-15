@@ -179,7 +179,7 @@ html {
 .button,
 .button:visited {
     background-color: $light-blue;
-    color: $light-white; /* text color */
+    color: $light-white;
     display: inline-block;
     font-size: 12px;
     @include font-declaration("OpenSansBold");
@@ -195,11 +195,13 @@ html {
 }
 
 .button:hover {
+    color: #fff; // Explicitly stated here to override generic :hover styles
     @include single-box-shadow(rgba(#000, 0.25), 0, 1px, 3px, 1px);
 }
 
 .button:active {
     top: 1px;
+    @include single-box-shadow(rgba(#000, 0.25), 0, 0, 3px, 0);
 }
 
 @import "h5bp-media-queries";
