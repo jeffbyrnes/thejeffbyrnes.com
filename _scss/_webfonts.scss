@@ -69,3 +69,11 @@
     font-style: normal;
 
 }
+
+// Font declarations
+@mixin font-declaration($font-family) {
+    font: {
+        family: $font-family;
+        weight: normal;
+    }
+}
