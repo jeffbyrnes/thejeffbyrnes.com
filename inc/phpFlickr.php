@@ -363,6 +363,7 @@ if ( !class_exists('phpFlickr') ) {
 				"medium" => "",
 				"medium_640" => "_z",
 				"large" => "_b",
+				"large_square" => "_q",
 				"original" => "_o"
 			);
 
