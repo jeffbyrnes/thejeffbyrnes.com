@@ -71,8 +71,48 @@
             </section><!-- end .skills -->
 
             <div class="photos">
-                <ul>
-                    <li><a href="#"><img src="#"></a></li>
+                <ul class="flickr-photos">
+                    <?php
+                    $flickr_api_key = '62bed203339ef3c90ad78eba543be3cd';
+
+                    require_once('inc/phpFlickr.php');
+                    $f = new phpFlickr($flickr_api_key);
+
+                    // Enable filesystem-based caching
+                    $f->enableCache('fs', $_SERVER['DOCUMENT_ROOT'] . '/.flickr-cache');
+
+                    $username    = 'berkleebassist';
+                    $user_id     = '79697399@N00';
+                    $jump_to     = NULL;
+                    $safe_search = 1; // show only safe content
+                    $extras      = NULL;
+                    $per_page    = 6;
+                    $page        = NULL;
+
+                    // Get 6 recent photos of mine
+                    $photos = $f->people_getPublicPhotos($user_id, $safe_search, $extras, $per_page, $page);
+
+                    // echo '<pre>'; print_r($photos); echo '</pre>';
+
+                    foreach ($photos['photos']['photo'] as $photo) {
+                        echo '<li class="flickr-thumb">';
+                        // print out a link to the photo page, attaching the id of the photo
+                        echo '<a href="photo.php?id=' . $photo['id'] . '" title="View ' . $photo['title'] . '">';
+
+                        // This next line uses buildPhotoURL to construct the location of our image,
+                        // and we want the 'Large Square' size
+                        // It also gives the image an alt attribute of the photo's title
+                        echo '<img src="'
+                                . $f->buildPhotoURL($photo, 'large_square')
+                                .  '" alt="'
+                                . $photo['title']
+                                . '">
+                        ';
+
+                        // close link & list item
+                        echo '</a></li>';
+                    }
+                    ?>
                 </ul>
 
                 <h1>SCUBA diving in the Caribbean and the South Pacific, 2006.</h1>
