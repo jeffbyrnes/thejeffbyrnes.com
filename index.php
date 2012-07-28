@@ -14,14 +14,14 @@
     <!-- Mobile viewport optimized: h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
     <!-- All JavaScript at the bottom, except this Modernizr build.
              Modernizr enables HTML5 elements & feature detects for optimal performance.
              Create your own custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="js/libs/modernizr-2.5.3.min.js"></script>
+    <script src="/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
     <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -71,7 +71,7 @@
             </section><!-- end .skills -->
 
             <div class="photos">
-                <ul class="flickr-photos">
+                <ul class="flickr-photos clearfix">
                     <?php
                     $flickr_api_key = '62bed203339ef3c90ad78eba543be3cd';
 
@@ -121,7 +121,12 @@
             </div><!-- end .photos -->
 
             <figure class="quote">
+                <hr>
+
                 <blockquote>The important thing is not to stop questioning.</blockquote>
+
+                <hr>
+
                 <figcaption>Albert Einstein</figcaption>
             </figure><!-- end .quote -->
 
@@ -161,7 +166,7 @@
     </div><!-- end .container -->
 
     <div class="footer-image ir">
-        <p>© 2012 Jeff Byrnes</p>
+        <p>© <?php echo date('Y'); ?> Jeff Byrnes</p>
     </div>
 
 
@@ -172,8 +177,8 @@
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
     <!-- scripts concatenated and minified via build script -->
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/script.js"></script>
     <!-- end scripts -->
 
     <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.

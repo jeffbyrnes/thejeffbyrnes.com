@@ -22,7 +22,7 @@
     }
 }
 
-// iPad
+// iPad & desktop
 @media only screen and (min-device-width: 768px) {
     .site-header {
         background-image: url(/img/collage.png);
@@ -39,6 +39,7 @@
     }
 }
 
+// Desktop
 @media only screen and (min-width: 1025px) {
     .skills ul:before,
     .skills ul:after {

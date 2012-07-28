@@ -70,14 +70,13 @@ html {
 .site-header h1,
 .site-header h2,
 .skills h1 {
-    font-family: sans-serif;
     font-weight: normal;
     line-height: 1.2;
 }
 
 .site-header h1 {
     color: $dark-blue;
-    font-family: OpenSansLight;
+    font-family: OpenSansLight, sans-serif;
     font-size: 80px;
     margin: 45px 0 5px;
 }
@@ -85,7 +84,7 @@ html {
 .site-header h2,
 .skills h1 {
     color: $orange;
-    font-family: MuseoSlab500;
+    font-family: MuseoSlab500, sans-serif;
     font-size: 24px;
     margin: 5px 0 29px;
 }
@@ -102,11 +101,13 @@ html {
 }
 
 .social-link {
+    // background-color: $light-blue;
     display: block;
     margin-right: 8px;
     width: 31px;
     height: 32px;
-    @include border-radius(16px);
+    @include border-radius(15px);
+    @include background-clip(border-box);
 }
 
 .social-link:hover {
@@ -137,43 +138,43 @@ html {
     background-color: #f8f8f5;
     margin: 52px 0 0;
     padding: 37px 0;
-}
 
-.skills h1 {
-    margin-bottom: 34px;
-}
+    h1 {
+        margin-bottom: 34px;
+    }
 
-.skills ul {
-    list-style: none;
-    line-height: 25px;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    height: 25px;
-    min-width: percentage($skills-list-width / $total-width);
-}
+    ul {
+        list-style: none;
+        line-height: 25px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        height: 25px;
+        min-width: percentage($skills-list-width / $total-width);
+    }
 
-.skills li {
-    color: $red;
-    font-family: MuseoSlab700;
-    font-size: 14px;
-    display: inline;
-}
+    li {
+        color: $red;
+        font-family: MuseoSlab700;
+        font-size: 14px;
+        display: inline;
+    }
 
-.skills li:after {
-    color: #bfbfbb;
-    content: "•";
-    margin: 0 6px 0 10px;
-}
+    li:after {
+        color: #bfbfbb;
+        content: "•";
+        margin: 0 6px 0 10px;
+    }
 
-.skills li:last-child:after {
-    content: "";
-    margin: 0;
-}
+    li:last-child:after {
+        content: "";
+        margin: 0;
+    }
 
-.skills p {
-    clear: both;
-    margin: 2px 0 32px;
+    p {
+        clear: both;
+        margin: 2px 0 32px;
+    }
 }
 
 .button,
@@ -202,6 +203,52 @@ html {
 .button:active {
     top: 1px;
     @include single-box-shadow(rgba(#000, 0.25), 0, 0, 3px, 0);
+}
+
+.photos {
+    margin: 60px 0 75px;
+
+    h1 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+
+.flickr-photos {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: (156px + (5px * 2)) * 3; // Width of a 3 thumbs + their margins
+}
+
+.flickr-thumb {
+    float: left;
+    margin: 5px;
+}
+
+.flickr-thumb:nth-of-type(4) {
+    clear: both;
+}
+
+.flickr-photos img {
+    // border: 1px solid $medium-grey;
+    // @include single-box-shadow(#fff, 0, 0, 0, 3px, inset);
+    border: 3px solid #fff;
+    @include single-box-shadow($medium-grey, 0, 0, 0, 1px);
+}
+
+.flickr-photos img:hover {
+    @include single-box-shadow($medium-grey, 0, 0, 2px, 2px);
+}
+
+.flickr-photos img:active {
+    @include single-box-shadow($light-grey, 0, 0, 2px, 2px);
+}
+
+.quote hr {
+    margin: 20px auto;
+    width: 169px;
+    height: 2px;
 }
 
 @import "h5bp-media-queries";
