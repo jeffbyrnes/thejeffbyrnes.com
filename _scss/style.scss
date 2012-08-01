@@ -13,12 +13,22 @@ $light-white:       #f4f3ef;
 
 
 // Total width of the design
-$total-width: 940px;
+$total-width:        940px;
+// Decimal factor by which to shrink things
+// Multiply by this to decrease text, etc., to fit
+$mobile-shrink-factor: .6;
 
+// Widths of other elements
+$pattern-width:      260px;
+$pattern-margin:      40px;
+$skills-list-width:  340px;
+$quote-width:        620px;
+$photo-width:        156px;
+$photo-width-mobile:  90px;
 
-$pattern-width: 260px;
-$pattern-margin: 40px;
-$skills-list-width: 340px;
+// Width of a 3 thumbs + their margins
+$photos-width:        ($photo-width + 12px) * 3;
+$photos-width-mobile: ($photo-width-mobile + 16px) * 3;
 
 @import "webfonts";
 @import "h5bp-normalize";
@@ -35,6 +45,15 @@ html {
     border-bottom: 4px solid $red;
 }
 
+hr {
+    background-color: $medium-grey;
+    color: $medium-grey;
+    margin: 20px auto;
+    width: 169px;
+    height: 2px;
+    @include single-box-shadow(rgba(#fff, 0.7), 0, 1px, 0, 0);
+}
+
 .container {
     margin: 0 auto;
     text-align: center;
@@ -43,7 +62,7 @@ html {
 }
 
 /**
- * Very topmost & bottomost image elements, mostly backgrounds
+ * Very topmost & bottommost image elements, mostly backgrounds
  */
 .header-image,
 .footer-image {
@@ -69,12 +88,16 @@ html {
 
 .site-header h1,
 .site-header h2,
-.skills h1 {
+.skills h1,
+.quote figcaption,
+footer h1,
+footer h2 {
     font-weight: normal;
     line-height: 1.2;
 }
 
-.site-header h1 {
+.site-header h1,
+footer h1 {
     color: $dark-blue;
     font-family: OpenSansLight, sans-serif;
     font-size: 80px;
@@ -82,7 +105,9 @@ html {
 }
 
 .site-header h2,
-.skills h1 {
+.skills h1,
+.quote figcaption,
+footer h2 {
     color: $orange;
     font-family: MuseoSlab500, sans-serif;
     font-size: 24px;
@@ -90,14 +115,14 @@ html {
 }
 
 .social-links {
-    border-top: 2px solid #deddda;
+    border-top: 2px solid $medium-grey;
     margin: 0 auto;
     padding: 18px 10px 0;
     width: 148px;
-}
 
-.social-links li {
-    float: left;
+    li {
+        float: left;
+    }
 }
 
 .social-link {
@@ -107,7 +132,7 @@ html {
     width: 31px;
     height: 32px;
     @include border-radius(15px);
-    @include background-clip(border-box);
+    @include background-clip(padding-box);
 }
 
 .social-link:hover {
@@ -155,7 +180,7 @@ html {
 
     li {
         color: $red;
-        font-family: MuseoSlab700;
+        font-family: MuseoSlab700, sans-serif;
         font-size: 14px;
         display: inline;
     }
@@ -187,12 +212,9 @@ html {
     padding: 5px 20px;
     position: relative;
     text-transform: uppercase;
-       -moz-border-radius: 15px 15px 14px 14px;
-    -webkit-border-radius: 15px 15px 14px 14px;
-            border-radius: 15px 15px 14px 14px;
-       -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-            background-clip: padding-box; /* prevents bg color from leaking outside the border */
+
+    @include border-radius(15px);
+    @include background-clip(padding-box); /* prevents bg color from leaking outside the border */
 }
 
 .button:hover {
@@ -205,6 +227,10 @@ html {
     @include single-box-shadow(rgba(#000, 0.25), 0, 0, 3px, 0);
 }
 
+
+/**
+ * Flickr Photos
+ */
 .photos {
     margin: 60px 0 75px;
 
@@ -218,7 +244,22 @@ html {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    width: (156px + (5px * 2)) * 3; // Width of a 3 thumbs + their margins
+    width: $photos-width;
+
+    img {
+        // border: 1px solid $medium-grey;
+        // @include single-box-shadow(#fff, 0, 0, 0, 3px, inset);
+        border: 3px solid #fff;
+        @include single-box-shadow($medium-grey, 0, 0, 0, 1px);
+    }
+
+    img:hover {
+        @include single-box-shadow($medium-grey, 0, 0, 2px, 2px);
+    }
+
+    img:active {
+        @include single-box-shadow($light-grey, 0, 0, 2px, 2px);
+    }
 }
 
 .flickr-thumb {
@@ -230,26 +271,69 @@ html {
     clear: both;
 }
 
-.flickr-photos img {
-    // border: 1px solid $medium-grey;
-    // @include single-box-shadow(#fff, 0, 0, 0, 3px, inset);
-    border: 3px solid #fff;
-    @include single-box-shadow($medium-grey, 0, 0, 0, 1px);
+/**
+ * Quote
+ */
+.quote {
+    blockquote {
+        background:
+            url(/img/quote-left.png)  no-repeat center left,
+            url(/img/quote-right.png) no-repeat center right;
+        font-family: OpenSansLight, sans-serif;
+        font-size: 50px;
+        line-height: 1.08;
+        margin: 1em auto;
+        padding: 0 120px;
+        width: percentage($quote-width / $total-width);
+        max-width: 620px;
+    }
 }
 
-.flickr-photos img:hover {
-    @include single-box-shadow($medium-grey, 0, 0, 2px, 2px);
+
+/**
+ * Twitter
+ */
+.twitter {
+    ol {
+        list-style: none;
+        margin: 80px 0 10px;
+        padding: 0;
+    }
+
+    .toot {
+        background-image: url(/img/bg-lines.png);
+        float: left;
+        margin: 0 10px;
+        padding: 30px 20px;
+        width: percentage( ( ( $total-width - (20px * 3) ) / 3 ) / $total-width);
+        height: 240px;
+        @include box-sizing(border-box);
+    }
+
+    .toot-time {
+        border-bottom: 2px solid $medium-grey;
+        color: $red;
+        display: inline-block;
+        font-family: MuseoSlab700, sans-serif;
+        padding: 0 20px 10px;
+
+    }
 }
 
-.flickr-photos img:active {
-    @include single-box-shadow($light-grey, 0, 0, 2px, 2px);
+
+/**
+ * Footer
+ */
+footer {
+    clear: both;
+
+    margin-top: 65px;
+
+    h1 {
+        margin-top: 30px;
+    }
 }
 
-.quote hr {
-    margin: 20px auto;
-    width: 169px;
-    height: 2px;
-}
 
 @import "h5bp-media-queries";
 @import "h5bp-helpers";

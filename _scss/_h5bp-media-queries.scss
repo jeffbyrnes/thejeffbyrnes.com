@@ -1,7 +1,5 @@
 /* ==|== media queries ======================================================
-   EXAMPLE Media Query for Responsive Design.
-   This example overrides the primary ('mobile first') styles
-   Modify as content requires.
+   For now, we're desktop-first. Maybe mobile-first later
    ========================================================================== */
 
 // iPhone
@@ -16,9 +14,33 @@
         background-size: 147px 32px;
     }
 
+    .site-header h1,
+    footer h1 {
+        font-size: (80px * $mobile-shrink-factor);
+    }
 
-    .site-header h1 {
-        font-size: 48px;
+    .flickr-photos {
+        width: $photos-width-mobile;
+
+        img {
+            width: $photo-width-mobile;
+        }
+    }
+
+    .photos {
+        h1 {
+            width: $photos-width-mobile - 4px;
+        }
+    }
+
+    .quote {
+        blockquote {
+            background: url(/img/quote-left@2x.png) no-repeat 10px top;
+            background-size: (82px * .75) (71px * .75);
+            font-size: 50px * $mobile-shrink-factor;
+            padding: 0 0 0 (71px * .75);
+            width: 300px - (71px * .75);
+        }
     }
 }
 
