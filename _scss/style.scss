@@ -1,0 +1,341 @@
+// Colors
+$dark-blue:         #3f5063;
+$grey-brown:        #7a7365;
+$orange:            #f27d00;
+$red:               #e53600;
+$medium-blue:       #37669e;
+$light-blue:        #4783cc;
+$faded-medium-blue: #99b1cc;
+$faded-light-blue:  #cfd9e6;
+$medium-grey:       #d6d6d4;
+$light-grey:        #e4e3e0;
+$light-white:       #f4f3ef;
+
+
+// Total width of the design
+$total-width:        940px;
+// Decimal factor by which to shrink things
+// Multiply by this to decrease text, etc., to fit
+$mobile-shrink-factor: .6;
+
+// Widths of other elements
+$pattern-width:      260px;
+$pattern-margin:      40px;
+$skills-list-width:  340px;
+$quote-width:        620px;
+$photo-width:        156px;
+$photo-width-mobile:  90px;
+
+// Width of a 3 thumbs + their margins
+$photos-width:        ($photo-width + 12px) * 3;
+$photos-width-mobile: ($photo-width-mobile + 16px) * 3;
+
+@import "webfonts";
+@import "h5bp-normalize";
+@import "compass/css3";
+
+
+/* ==|== primary styles =====================================================
+   Author: Jeff Byrnes
+   ========================================================================== */
+
+html {
+    background: url(/img/bg-noise.jpg) repeat center top;
+    // background: #000;
+    border-bottom: 4px solid $red;
+}
+
+hr {
+    background-color: $medium-grey;
+    color: $medium-grey;
+    margin: 20px auto;
+    width: 169px;
+    height: 2px;
+    @include single-box-shadow(rgba(#fff, 0.7), 0, 1px, 0, 0);
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: $total-width;
+}
+
+/**
+ * Very topmost & bottommost image elements, mostly backgrounds
+ */
+.header-image,
+.footer-image {
+    background: url(/img/bg-lines.png) repeat center top;
+    text-align: center;
+    height: 55px;
+}
+
+.footer-image {
+    margin-top: 60px;
+}
+
+/**
+ * Main site background, w/ intro text
+ */
+.site-header {
+    background-repeat: no-repeat;
+    background-position: -2px bottom;
+    @include background-size(contain);
+    border-bottom: 4px solid $red;
+    margin-bottom: 27px;
+}
+
+.site-header h1,
+.site-header h2,
+.skills h1,
+.quote figcaption,
+footer h1,
+footer h2 {
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.site-header h1,
+footer h1 {
+    color: $dark-blue;
+    font-family: OpenSansLight, sans-serif;
+    font-size: 80px;
+    margin: 45px 0 5px;
+}
+
+.site-header h2,
+.skills h1,
+.quote figcaption,
+footer h2 {
+    color: $orange;
+    font-family: MuseoSlab500, sans-serif;
+    font-size: 24px;
+    margin: 5px 0 29px;
+}
+
+.social-links {
+    border-top: 2px solid $medium-grey;
+    margin: 0 auto;
+    padding: 18px 10px 0;
+    width: 148px;
+
+    li {
+        float: left;
+    }
+}
+
+.social-link {
+    // background-color: $light-blue;
+    display: block;
+    margin-right: 8px;
+    width: 31px;
+    height: 32px;
+    @include border-radius(15px);
+    @include background-clip(padding-box);
+}
+
+.social-link:hover {
+    @include box-shadow(rgba(black, 0.5) 2px 2px 10px);
+}
+
+#social-twitter {
+    background-position: -38px 0;
+}
+
+#social-flickr {
+    background-position: -77px 0;
+}
+
+#social-github {
+    background-position: -116px 0;
+    margin-right: 0;
+}
+
+.main {
+    line-height: 1.533;
+}
+
+/**
+ * Skills
+ */
+.skills {
+    background-color: #f8f8f5;
+    margin: 52px 0 0;
+    padding: 37px 0;
+
+    h1 {
+        margin-bottom: 34px;
+    }
+
+    ul {
+        list-style: none;
+        line-height: 25px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        height: 25px;
+        min-width: percentage($skills-list-width / $total-width);
+    }
+
+    li {
+        color: $red;
+        font-family: MuseoSlab700, sans-serif;
+        font-size: 14px;
+        display: inline;
+    }
+
+    li:after {
+        color: #bfbfbb;
+        content: "•";
+        margin: 0 6px 0 10px;
+    }
+
+    li:last-child:after {
+        content: "";
+        margin: 0;
+    }
+
+    p {
+        clear: both;
+        margin: 2px 0 32px;
+    }
+}
+
+.button,
+.button:visited {
+    background-color: $light-blue;
+    color: $light-white;
+    display: inline-block;
+    font-size: 12px;
+    @include font-declaration("OpenSansBold");
+    padding: 5px 20px;
+    position: relative;
+    text-transform: uppercase;
+
+    @include border-radius(15px);
+    @include background-clip(padding-box); /* prevents bg color from leaking outside the border */
+}
+
+.button:hover {
+    color: #fff; // Explicitly stated here to override generic :hover styles
+    @include single-box-shadow(rgba(#000, 0.25), 0, 1px, 3px, 1px);
+}
+
+.button:active {
+    top: 1px;
+    @include single-box-shadow(rgba(#000, 0.25), 0, 0, 3px, 0);
+}
+
+
+/**
+ * Flickr Photos
+ */
+.photos {
+    margin: 60px 0 75px;
+
+    h1 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+
+.flickr-photos {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: $photos-width;
+
+    img {
+        // border: 1px solid $medium-grey;
+        // @include single-box-shadow(#fff, 0, 0, 0, 3px, inset);
+        border: 3px solid #fff;
+        @include single-box-shadow($medium-grey, 0, 0, 0, 1px);
+    }
+
+    img:hover {
+        @include single-box-shadow($medium-grey, 0, 0, 2px, 2px);
+    }
+
+    img:active {
+        @include single-box-shadow($light-grey, 0, 0, 2px, 2px);
+    }
+}
+
+.flickr-thumb {
+    float: left;
+    margin: 5px;
+}
+
+.flickr-thumb:nth-of-type(4) {
+    clear: both;
+}
+
+/**
+ * Quote
+ */
+.quote {
+    blockquote {
+        background:
+            url(/img/quote-left.png)  no-repeat center left,
+            url(/img/quote-right.png) no-repeat center right;
+        font-family: OpenSansLight, sans-serif;
+        font-size: 50px;
+        line-height: 1.08;
+        margin: 1em auto;
+        padding: 0 120px;
+        width: percentage($quote-width / $total-width);
+        max-width: 620px;
+    }
+}
+
+
+/**
+ * Twitter
+ */
+.twitter {
+    ol {
+        list-style: none;
+        margin: 80px 0 10px;
+        padding: 0;
+    }
+
+    .toot {
+        background-image: url(/img/bg-lines.png);
+        float: left;
+        margin: 0 10px;
+        padding: 30px 20px;
+        width: percentage( ( ( $total-width - (20px * 3) ) / 3 ) / $total-width);
+        height: 240px;
+        @include box-sizing(border-box);
+    }
+
+    .toot-time {
+        border-bottom: 2px solid $medium-grey;
+        color: $red;
+        display: inline-block;
+        font-family: MuseoSlab700, sans-serif;
+        padding: 0 20px 10px;
+
+    }
+}
+
+
+/**
+ * Footer
+ */
+footer {
+    clear: both;
+
+    margin-top: 65px;
+
+    h1 {
+        margin-top: 30px;
+    }
+}
+
+
+@import "h5bp-media-queries";
+@import "h5bp-helpers";
+@import "h5bp-print";
+
