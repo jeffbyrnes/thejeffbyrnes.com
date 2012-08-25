@@ -21,6 +21,17 @@
              Create your own custom Modernizr build: www.modernizr.com/download/ -->
     <script src="/js/libs/modernizr-2.5.3.min.js"></script>
     <?php // <script src="/js/chirp.js"></script> ?>
+
+    <!-- Asynchronous Google Analytics snippet.
+         mathiasbynens.be/notes/async-analytics-snippet -->
+    <script>
+        var _gaq=[['_setAccount','UA-583944-9'],['_setDomainName', 'jeffbyrn.es'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Mint statistics -->
+    <script src="/mint/?js"></script>
 </head>
 <body>
     <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -205,15 +216,5 @@
      */
     ?>
 
-    <!-- Asynchronous Google Analytics snippet.
-         mathiasbynens.be/notes/async-analytics-snippet -->
-    <script>
-        var _gaq=[['_setAccount','UA-583944-9'],['_setDomainName', 'jeffbyrn.es'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-    <!-- Mint statistics -->
-    <script src="/mint/?js"></script>
 </body>
 </html>
