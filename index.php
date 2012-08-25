@@ -213,5 +213,7 @@
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+    <!-- Mint statistics -->
+    <script src="/mint/?js"></script>
 </body>
 </html>
