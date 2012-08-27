@@ -20,7 +20,7 @@
              Modernizr enables HTML5 elements & feature detects for optimal performance.
              Create your own custom Modernizr build: www.modernizr.com/download/ -->
     <script src="/js/libs/modernizr-2.5.3.min.js"></script>
-    <?php // <script src="/js/chirp.js"></script> ?>
+    <script src="/js/chirp.min.js"></script>
 </head>
 <body>
     <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -129,19 +129,17 @@
                 <figcaption>Albert Einstein</figcaption>
             </figure><!-- end .quote -->
 
-            <?php
-            /**
-             * Commenting out for now
-             *
             <div class="twitter">
                 <script>
                     Chirp({
-                        user:'berkleebassist',
+                        user: 'berkleebassist',     // Username to grab
+                        max: 3,                     // Show 3 tweets
+                        count: 25,                  // Retrive 25 tweets; is more than max b/c we don't show replies
+                        replies: false,             // Don't show replies
+                        cacheExpire: 1000 * 60 * 2  // Number of milliseconds to cache tweets
                         templates: {
-                            count: 3,
-                            max: 3,
                             base: '<ol class="chirp clearfix">{{tweets}}</ol>',
-                            tweet: '<li class="toot"><a class="toot-time toot-permalink" href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}"><time datetime="{{created_at}}" pubdate>{{time_ago}}</time></a><p>{{html}}</p></li>'
+                            tweet: '<li class="toot"><a class="toot-time toot-permalink" href="http://twitter.com/{{user.screen_name}}/statuses/{{id_str}}"><time datetime="{{created_at}}" pubdate>{{time_ago}}</time></a><p>{{html}}</p></li>'
                         }
                     });
                 </script>
@@ -168,8 +166,6 @@
 
                 <a class="button" href="http://twitter.com/berkleebassist">@berkleebassist</a>
             </div>
-             */
-            ?>
         </div><!-- end .main -->
 
         <footer>
