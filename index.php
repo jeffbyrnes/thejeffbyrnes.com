@@ -145,26 +145,6 @@
                     });
                 </script>
 
-                <ol class="clearfix">
-                    <li class="toot">
-                        <a class="toot-time toot-permalink" href="#">4 hours ago</a>
-
-                        <p><a href="http://twitter.com/amyullman">@AmyUllman</a> Haha, I hear yah! Easy to resist with work to return to though.</p>
-                    </li>
-
-                    <li class="toot">
-                        <a class="toot-time toot-permalink" href="#">13 hours ago</a>
-
-                        <p>Proien metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent.</p>
-                    </li>
-
-                    <li class="toot">
-                        <a class="toot-time toot-permalink" href="#">19 hours ago</a>
-
-                        <p><a href="http://twitter.com/ctconnors">@ctconnors</a> YUP</p>
-                    </li>
-                </ol>
-
                 <a class="button" href="http://twitter.com/berkleebassist">@berkleebassist</a>
             </div>
         </div><!-- end .main -->
