@@ -134,9 +134,10 @@
                     Chirp({
                         user: 'berkleebassist',     // Username to grab
                         max: 3,                     // Show 3 tweets
-                        count: 25,                  // Retrive 25 tweets; is more than max b/c we don't show replies
+                        retweets: true,
                         replies: false,             // Don't show replies
-                        cacheExpire: 1000 * 60 * 2  // Number of milliseconds to cache tweets
+                        // cacheExpire: 0,
+                        cacheExpire: 1000 * 60 * 2, // Number of milliseconds to cache tweets
                         templates: {
                             base: '<ol class="chirp clearfix">{{tweets}}</ol>',
                             tweet: '<li class="toot"><a class="toot-time toot-permalink" href="http://twitter.com/{{user.screen_name}}/statuses/{{id_str}}"><time datetime="{{created_at}}" pubdate>{{time_ago}}</time></a><p>{{html}}</p></li>'
