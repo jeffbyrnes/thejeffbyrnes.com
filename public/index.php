@@ -51,7 +51,7 @@
         <div class="main" role="main">
             <p class="blurb">Based in Boston since 2002, I attended <a href="http://www.berklee.edu/">Berklee</a>, playing both upright and electric&nbsp;bass.<br>While at school, I ended up gravitating to tech, becoming a developer by the time I finished. I’m also a <a href="http://www.couchsurfing.org/people/jeffbyrnes/">CouchSurfer</a> and a SCUBA&nbsp;diver.</p>
 
-            <p class="current-job">Currently, I work for <a href="http://www.hungryfishmedia.com/">Hungry Fish Media</a>.</p>
+            <p class="current-job">Currently, I work for <a href="http://www.evertrue.com/">EverTrue</a>.</p>
 
             <section class="skills">
                 <h1>I’m skilled in</h1>
