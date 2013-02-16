@@ -12,8 +12,16 @@ server "#{domain}", :app, :web, :db, :primary => true
 
 set :deploy_via, :copy
 set :copy_exclude, [
+  ".DS_Store",
   ".git",
-  ".DS_Store"
+  ".gitignore",
+  ".editorconfig",
+  ".gitattributes",
+  ".sass_cache",
+  "Capfile",
+  "config",
+  "icon.png",
+  "README.me"
 ]
 
 set :scm, :git
@@ -29,7 +37,7 @@ set(:release_name) {
 set :deploy_to, "/home/#{user}/#{application}"
 
 # Point symlink to public folder
-set :release_path, "#{releases_path}/#{release_name}/public"
+set :release_path, "#{releases_path}/#{release_name}"
 
 # Don't use sudo for operations
 set :use_sudo, false
