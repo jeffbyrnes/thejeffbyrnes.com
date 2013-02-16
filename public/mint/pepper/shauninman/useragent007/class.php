@@ -13,7 +13,7 @@ $installPepper = "SI_UserAgent";
 
 class SI_UserAgent extends Pepper
 {
-	var $version	= 210; 
+	var $version	= 211; 
 	var $info		= array
 	(
 		'pepperName'	=> 'User Agent 007',
@@ -822,6 +822,7 @@ HERE;
 			{
 				$builds = array
 				(
+					'Windows NT 6.2'		 	=> '8',
 					'Windows NT 6.1'		 	=> '7',
 					'Windows NT 6.0'		 	=> 'Vista',
 					'Windows NT 5.2'		 	=> 'XP',
@@ -864,7 +865,8 @@ HERE;
 					'10.4' => 'Tiger',
 					'10.5' => 'Leopard',
 					'10.6' => 'Snow Leopard',
-					'10.7' => 'Lion'
+					'10.7' => 'Lion',
+					'10.8' => 'Mountain Lion'
 				);
 
 				if (isset($builds[$build]))
