@@ -21,7 +21,7 @@ set :copy_exclude, [
   "Capfile",
   "config",
   "icon.png",
-  "README.me"
+  "README.md"
 ]
 
 set :scm, :git
