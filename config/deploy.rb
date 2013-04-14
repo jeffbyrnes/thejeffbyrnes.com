@@ -1,6 +1,6 @@
 # replace these with your server's information
 set :domain,  "jeffbyrn.es"
-set :user,    "jeffbyrnes"
+set :user,    "ec2-user"
 
 # name this the same thing as the directory on your server
 set :application, "jeffbyrn.es"
@@ -27,14 +27,8 @@ set :copy_exclude, [
 set :scm, :git
 set :branch, "master"
 
-# Set the release name to be a local timestamp
-set(:release_name) {
-    set :deploy_timestamped, true;
-    Time.now.localtime.strftime("%Y-%m-%d-%H.%M.%S.%Z")
-}
-
 # Set where to deploy files
-set :deploy_to, "/home/#{user}/#{application}"
+set :deploy_to, "/var/www/vhosts/#{application}"
 
 # Point symlink to public folder
 set :release_path, "#{releases_path}/#{release_name}"
@@ -43,7 +37,7 @@ set :release_path, "#{releases_path}/#{release_name}"
 set :use_sudo, false
 
 # Number of releases to keep
-set :keep_releases, 3
+set :keep_releases, 5
 
 # Tells Capistrano to create a local version of the repo and use that to run deploys.
 # This means it doesn't do a full clone each time
