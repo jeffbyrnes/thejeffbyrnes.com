@@ -190,7 +190,25 @@
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+
     <!-- Mint statistics -->
     <script src="/mint/?js"></script>
+
+    <script>
+      var GoSquared = {};
+      GoSquared.acct = "GSN-085834-Q";
+      (function(w){
+        function gs(){
+          w._gstc_lt = +new Date;
+          var d = document, g = d.createElement("script");
+          g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+          var s = d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(g, s);
+        }
+        w.addEventListener ?
+          w.addEventListener("load", gs, false) :
+          w.attachEvent("onload", gs);
+      })(window);
+    </script>
 </body>
 </html>
