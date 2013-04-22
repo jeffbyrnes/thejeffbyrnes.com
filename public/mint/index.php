@@ -10,7 +10,7 @@
  ******************************************************************************
  Launcher
  ******************************************************************************/
-if (!defined('MINT_ROOT')) { define('MINT_ROOT', ''); }
+if (!defined('MINT_ROOT')) { define('MINT_ROOT', './'); }
 if (isset($_GET['errors'])) { error_reporting(E_ALL); } else { error_reporting(0); }
 
 define('MINT',true);
