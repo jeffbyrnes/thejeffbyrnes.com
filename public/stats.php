@@ -13,14 +13,11 @@ $stats_file_path = $_SERVER['DOCUMENT_ROOT'] . '/../shared/stats.json';
 
 // record data
 if (isset($_POST['time'], $_POST['df'])) {
-    $time_post_sanitized = htmlspecialchars($_POST['time']);
-    $df_post_sanitized   = htmlspecialchars($_POST['df']);
-
     // getting the server load
-    preg_match('/\d+\.\d{2}/', $time_post_sanitized, $load);
+    preg_match('/\d+\.\d{2}/', $_POST['time'], $load);
 
     // get available disk space
-    preg_match('/\d+%/', $df_post_sanitized, $df);
+    preg_match('/\d+%/', $_POST['df'], $df);
 
     if(    !count($load)
         || !count($df)
