@@ -6,6 +6,8 @@ $servers = array(
     // '185.14.184.xxx' => 'thejeffbyrnes.com'
 );
 
+$stats_file_path = $_SERVER['DOCUMENT_ROOT'] . '/../shared/stats.json';
+
 // this script is triggered by this command from the terminal or cron:
 // echo 'time=`uptime`&df=`df -h`" | curl -s -d @- http://domain.com/path/to/script.php
 
@@ -39,17 +41,22 @@ if (isset($_POST['time'], $_POST['df'])) {
 
 function save_to_stats($stats)
 {
-    $data               = json_decode(file_get_contents('stats.json'), true);
+    // Pull in variables
+    global $stats_file_path;
+
+    $data               = json_decode(file_get_contents($stats_file_path), true);
     $data[$stats['ip']] = $stats;
 
-    file_put_contents('stats.json', json_encode($data), LOCK_EX);
+    file_put_contents($stats_file_path, json_encode($data), LOCK_EX);
 }
 
 function output_stats_table()
 {
-    global $servers;
+    // Pull in variables
+    global $servers, $stats_file_path;
+
     // display data
-    $data = json_decode(file_get_contents('stats.json'), true);
+    $data = json_decode(file_get_contents($stats_file_path), true);
     ?>
 
     <table id="projects">
