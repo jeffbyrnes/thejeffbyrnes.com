@@ -50,14 +50,13 @@ ssh_options[:paranoid]      = false
 
 # this tells capistrano what to do when you deploy
 namespace :deploy do
-
   desc <<-DESC
   A macro-task that updates the code and fixes the symlink.
   DESC
   task :default do
     transaction do
       update_code
-      symlink
+      create_symlink
     end
   end
 
