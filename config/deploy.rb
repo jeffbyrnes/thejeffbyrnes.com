@@ -68,5 +68,18 @@ namespace :deploy do
   task :after_deploy do
     cleanup
   end
-
 end
+
+namespace :shared do
+  task :make_shared_dir do
+    run "if [ ! -d #{shared_path}/files ]; then mkdir #{shared_path}/files; fi"
+  end
+  task :make_symlinks do
+    run "if [ ! -h #{release_path}/shared ]; then ln -s #{shared_path}/files/ #{release_path}/shared; fi"
+    run "for p in `find -L #{release_path}/public -type l`; do t=`readlink $p | grep -o 'shared/.*$'`; mkdir -p #{release_path}/public/$t; sudo chown apache:ec2-user #{release_path}/public/$t; done"
+  end
+end
+
+after "deploy:update_code", "shared:make_shared_dir"
+after "deploy:update_code", "shared:make_symlinks"
+
