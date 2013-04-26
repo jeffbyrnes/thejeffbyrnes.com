@@ -159,7 +159,7 @@
 
             <hr>
 
-            <a class="button" href="mailto:jeff@jeffbyrn.es?subject=Dropping a line from jeffbyrn.es">Drop me a line</a>
+            <a class="button" href="mailto:thejeffbyrnes@gmail.com?subject=Dropping a line from jeffbyrn.es">Drop me a line</a>
         </footer>
     </div><!-- end .container -->
 
