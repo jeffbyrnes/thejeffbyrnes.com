@@ -164,7 +164,7 @@
     </div><!-- end .container -->
 
     <div class="footer-image ir">
-        <p>© <?php echo date('Y'); ?> Jeff Byrnes</p>
+        <p>© 2012–<?php echo date('Y'); ?> Jeff Byrnes</p>
     </div>
 
     <?php
