@@ -192,7 +192,7 @@
     </script>
 
     <!-- Mint statistics -->
-    <script src="/mint/?js"></script>
+    <!-- <script src="/mint/?js"></script> -->
 
     <script>
         var GoSquared = {};
