@@ -28,7 +28,7 @@ set :scm, :git
 set :branch, "master"
 
 # Set where to deploy files
-set :deploy_to, "/var/www/vhosts/#{application}"
+set :deploy_to, "/srv/#{application}"
 
 # Point symlink to public folder
 set :release_path, "#{releases_path}/#{release_name}"
