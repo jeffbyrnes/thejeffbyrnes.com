@@ -14,7 +14,7 @@
     <!-- Mobile viewport optimized: h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/style.201309161715.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- All JavaScript at the bottom, except this Modernizr build.
              Modernizr enables HTML5 elements & feature detects for optimal performance.
