@@ -148,7 +148,7 @@
 
             <hr>
 
-            <a class="button" href="mailto:thejeffbyrnes@gmail.com?subject=Dropping a line from jeffbyrn.es">Drop me a line</a>
+            <a class="button" href="mailto:thejeffbyrnes@gmail.com?subject=Dropping a line from thejeffbyrnes.com">Drop me a line</a>
         </footer>
     </div><!-- end .container -->
 
@@ -171,13 +171,16 @@
      */
     ?>
 
-    <!-- Asynchronous Google Analytics snippet.
-         mathiasbynens.be/notes/async-analytics-snippet -->
+    <!-- Google Universal Analytics beta
+         analytics.blogspot.com/2013/03/expanding-universal-analytics-into.html -->
     <script>
-        var _gaq=[['_setAccount','UA-583944-9'],['_setDomainName', 'jeffbyrn.es'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-583944-15', 'thejeffbyrnes.com');
+        ga('send', 'pageview');
     </script>
 
     <!-- Mint statistics -->
