@@ -2,7 +2,7 @@
 
 // add your server aliases here
 $servers = array(
-    '54.225.106.31' => 'jeffbyrn.es'
+    '54.225.106.31' => 'thejeffbyrnes.com'
     // '185.14.184.xxx' => 'thejeffbyrnes.com'
 );
 

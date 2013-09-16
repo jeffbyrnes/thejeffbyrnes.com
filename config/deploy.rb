@@ -1,9 +1,9 @@
 # replace these with your server's information
-set :domain,  "jeffbyrn.es"
+set :domain,  "thejeffbyrnes.com"
 set :user,    "ec2-user"
 
 # name this the same thing as the directory on your server
-set :application, "jeffbyrn.es"
+set :application, "thejeffbyrnes.com"
 
 # or use a hosted repository
 set :repository, "ssh://git@bitbucket.org/jeffbyrnes/jeffbyrn.es.git"
