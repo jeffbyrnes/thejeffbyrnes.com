@@ -294,30 +294,38 @@ footer h2 {
  * Twitter
  */
 .twitter {
-    ol {
-        list-style: none;
-        margin: 80px 0 10px;
+    .twitter-timeline {
+        display: block;
+        margin: 80px auto 10px;
         padding: 0;
     }
 
-    .toot {
-        background-image: url(/img/bg-lines.png);
-        float: left;
-        margin: 0 10px;
-        padding: 30px 20px;
-        width: percentage( ( ( $total-width - (20px * 3) ) / 3 ) / $total-width);
-        height: 240px;
-        @include box-sizing(border-box);
-    }
+    // Defunct Chirp.js-powered custom styles
+    // keeping here for the day when this can be resurrected using server-side code
+    //
+    // ol {
+    //     list-style: none;
+    //     margin: 80px 0 10px;
+    //     padding: 0;
+    // }
 
-    .toot-time {
-        border-bottom: 2px solid $medium-grey;
-        color: $red;
-        display: inline-block;
-        font-family: MuseoSlab700, sans-serif;
-        padding: 0 20px 10px;
+    // .toot {
+    //     background-image: url(/img/bg-lines.png);
+    //     float: left;
+    //     margin: 0 10px;
+    //     padding: 30px 20px;
+    //     width: percentage( ( ( $total-width - (20px * 3) ) / 3 ) / $total-width);
+    //     height: 240px;
+    //     @include box-sizing(border-box);
+    // }
 
-    }
+    // .toot-time {
+    //     border-bottom: 2px solid $medium-grey;
+    //     color: $red;
+    //     display: inline-block;
+    //     font-family: MuseoSlab700, sans-serif;
+    //     padding: 0 20px 10px;
+    // }
 }
 
 

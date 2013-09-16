@@ -130,20 +130,9 @@
             </figure><!-- end .quote -->
 
             <div class="twitter">
-                <script>
-                    Chirp({
-                        user: 'berkleebassist',     // Username to grab
-                        max: 3,                     // Show 3 tweets
-                        retweets: true,
-                        replies: false,             // Don't show replies
-                        // cacheExpire: 0,
-                        cacheExpire: 1000 * 60 * 2, // Number of milliseconds to cache tweets
-                        templates: {
-                            base: '<ol class="chirp clearfix">{{tweets}}</ol>',
-                            tweet: '<li class="toot"><a class="toot-time toot-permalink" href="http://twitter.com/{{user.screen_name}}/statuses/{{id_str}}"><time datetime="{{created_at}}" pubdate>{{time_ago}}</time></a><p>{{html}}</p></li>'
-                        }
-                    });
-                </script>
+                <a class="twitter-timeline" href="https://twitter.com/berkleebassist" data-widget-id="379704187694481408" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3">Tweets by @berkleebassist</a>
+
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                 <a class="button" href="http://twitter.com/berkleebassist">@berkleebassist</a>
             </div>
