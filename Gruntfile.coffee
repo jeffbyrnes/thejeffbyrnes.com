@@ -19,6 +19,15 @@ module.exports = (grunt) ->
 
     # Delete generated files
     clean: ["<%= releaseStyleDir %>"]
+
+    # Lint Coffee using CoffeeLint
+    coffeelint:
+      options:
+        'max_line_length':
+          'level': 'ignore'
+      gruntfile: ["Gruntfile.coffee"]
+
+    # Compile Sass into CSS
     compass:
       prod:
         options:
@@ -28,10 +37,11 @@ module.exports = (grunt) ->
         options:
           environment: "dev"
 
+    # Watch files for changes
     watch:
       gruntfile:
-        files: "<%= jshint.gruntfile.src %>"
-        tasks: ["jshint:gruntfile"]
+        files: "<%= coffeelint.gruntfile %>"
+        tasks: ["coffeelint"]
 
       compass:
         files: ["<%= sourceStyleDir %>/*.scss"]
