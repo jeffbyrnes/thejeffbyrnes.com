@@ -1,10 +1,5 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
 
@@ -19,7 +14,7 @@
     <!-- All JavaScript at the bottom, except this Modernizr build.
              Modernizr enables HTML5 elements & feature detects for optimal performance.
              Create your own custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="/js/libs/modernizr-2.5.3.min.js"></script>
+    <script src="/js/lib/modernizr-2.6.3.min.js"></script>
 </head>
 <body>
     <div class="header-image">
@@ -150,21 +145,6 @@
     <div class="footer-image ir">
         <p>© 2012–<?php echo date('Y'); ?> Jeff Byrnes</p>
     </div>
-
-    <?php
-    /**
-     * Not using jQuery at the moment
-     *
-    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-
-    <!-- scripts concatenated and minified via build script -->
-    <script src="/js/plugins.js"></script>
-    <script src="/js/script.js"></script>
-    <!-- end scripts -->
-     */
-    ?>
 
     <!-- Google Universal Analytics beta
          analytics.blogspot.com/2013/03/expanding-universal-analytics-into.html -->

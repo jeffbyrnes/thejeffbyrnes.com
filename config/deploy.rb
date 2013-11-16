@@ -20,8 +20,11 @@ set :copy_exclude, [
   ".sass_cache",
   "Capfile",
   "config",
+  "config.rb",
   "icon.png",
-  "README.md"
+  "Gruntfile.js",
+  "README.md",
+  "node_modules"
 ]
 
 set :scm, :git
