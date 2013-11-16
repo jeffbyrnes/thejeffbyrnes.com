@@ -31,5 +31,6 @@ publish
 .idea
 /shared
 node_modules
+/public/css
 
 .tags*
