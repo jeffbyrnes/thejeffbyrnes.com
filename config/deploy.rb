@@ -45,6 +45,7 @@ set :keep_releases, 5
 # Tells Capistrano to create a local version of the repo and use that to run deploys.
 # This means it doesn't do a full clone each time
 set :deploy_via, :remote_cache
+
 # Must be set for the password prompt from git to work
 default_run_options[:pty] = true
 
@@ -73,16 +74,48 @@ namespace :deploy do
   end
 end
 
+namespace :build do
+  desc "Handle all compilation, minification, and deployment of assets"
+  task :default do
+    # optional way to skip build & just upload current assets to the servers
+    skip_build = fetch(:skip_build, false)
+
+    build unless skip_build
+    upload_build
+  end
+
+  desc 'Wrapper command for `grunt release`'
+  task :build, :roles => :web, :except => { :no_release => true } do
+    # Build site using Grunt.js
+    run_locally("grunt release")
+  end
+
+  desc 'Uploads compiled release'
+  task :upload_build, :roles => :web, :except => { :no_release => true } do
+    asset_dirs = ["public/css"]
+    skip_build = fetch(:skip_build, false)
+
+    logger.debug "Uploading compiled release"
+    asset_dirs.each do |dir|
+      logger.debug "trying to upload assets from ./#{dir}/ -> #{latest_release}/#{dir}/"
+
+      upload("#{dir}", "#{latest_release}/", :via=> :scp, :recursive => true)
+    end
+  end
+end
+
 namespace :shared do
   task :make_shared_dir do
     run "if [ ! -d #{shared_path}/files ]; then mkdir #{shared_path}/files; fi"
   end
+
   task :make_symlinks do
     run "if [ ! -h #{release_path}/shared ]; then ln -s #{shared_path}/files/ #{release_path}/shared; fi"
     run "for p in `find -L #{release_path}/public -type l`; do t=`readlink $p | grep -o 'shared/.*$'`; mkdir -p #{release_path}/public/$t; sudo chown apache:ec2-user #{release_path}/public/$t; done"
   end
 end
 
+after "deploy:update_code", "build"
 after "deploy:update_code", "shared:make_shared_dir"
 after "deploy:update_code", "shared:make_symlinks"
 
