@@ -8,7 +8,7 @@ set :user,    'ec2-user'
 set :application, 'thejeffbyrnes.com'
 
 # or use a hosted repository
-set :repository, 'ssh://git@bitbucket.org/jeffbyrnes/jeffbyrn.es.git'
+set :repository, 'git@bitbucket.org:jeffbyrnes/thejeffbyrnes.com.git'
 
 server "#{domain}", :app, :web, :db, primary: true
 
