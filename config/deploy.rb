@@ -99,7 +99,7 @@ namespace :build do
     asset_dirs.each do |dir|
       logger.debug "trying to upload assets from ./#{dir}/ -> #{latest_release}/#{dir}/"
 
-      upload("#{dir}", "#{latest_release}/", via: :scp, recursive: true)
+      upload("#{dir}", "#{latest_release}/public/", via: :scp, recursive: true)
     end
   end
 end
