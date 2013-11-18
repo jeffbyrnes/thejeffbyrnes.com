@@ -19,6 +19,30 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-compass": "~0.6.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-coffeelint": "0.0.7"
+    "grunt-coffeelint": "0.0.7",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7"
+  },
+  "jshintConfig": {
+    "boss": true,
+    "browser": true,
+    "curly": false,
+    "devel": false,
+    "eqeqeq": false,
+    "-W041": false,
+    "eqnull": true,
+    "immed": true,
+    "jquery": true,
+    "latedef": true,
+    "laxbreak": true,
+    "newcap": true,
+    "noarg": true,
+    "shadow": true,
+    "sub": true,
+    "trailing": true,
+    "undef": false,
+    "unused": false,
+    "white": false
   }
 }

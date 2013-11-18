@@ -92,7 +92,7 @@ namespace :build do
 
   desc 'Uploads compiled release'
   task :upload_build, :roles => :web, :except => { :no_release => true } do
-    asset_dirs = ["public/css"]
+    asset_dirs = ['public/css', 'public/js']
     skip_build = fetch(:skip_build, false)
 
     logger.debug "Uploading compiled release"

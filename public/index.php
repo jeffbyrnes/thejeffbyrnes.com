@@ -11,10 +11,7 @@
 
     <link rel="stylesheet" href="/css/style.css">
 
-    <!-- All JavaScript at the bottom, except this Modernizr build.
-             Modernizr enables HTML5 elements & feature detects for optimal performance.
-             Create your own custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="/js/lib/modernizr-2.6.3.min.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
     <div class="header-image">

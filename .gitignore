@@ -32,5 +32,6 @@ publish
 /shared
 node_modules
 /public/css
+/public/js
 
 .tags*

@@ -1,0 +1,22 @@
+{
+  "name": "thejeffbyrnes.com",
+  "authors": [
+    "Jeff Byrnes <jeff@evertrue.com>"
+  ],
+  "main": "public/index.php",
+  "license": "None",
+  "homepage": "http://thejeffbyrnes.com/",
+  "private": true,
+  "directory": "shared/bower_components",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "shared/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "modernizr": "~2.6.3"
+  }
+}
