@@ -11,7 +11,7 @@ module.exports = (grunt) ->
     # Constants
     version: "<%= pkg.version %>"
     name: "<%= pkg.name %>"
-    publicDir: "public/"
+    publicDir: "public"
     sourceStyleDir: "<%= publicDir %>/_scss"
     releaseStyleDir: "<%= publicDir %>/css"
     sourceJSDir: "<%= publicDir %>/lib"
