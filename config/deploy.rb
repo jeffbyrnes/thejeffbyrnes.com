@@ -13,3 +13,4 @@ set :keep_releases, 5
 # Ensure Grunt runs the `grunt release` command
 set :grunt_tasks, 'release'
 
+before 'deploy:updated', 'grunt'
