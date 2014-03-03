@@ -7,6 +7,7 @@ set :scm, :git
 server 'thejeffbyrnes.com', user: 'deploy', roles: %w{web app db}
 
 
+set :linked_dirs, %w{shared public/.flickr-cache node_modules}
 
 set :keep_releases, 5
 

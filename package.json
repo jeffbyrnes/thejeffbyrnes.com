@@ -12,7 +12,7 @@
     "url": "http://thejeffbyrnes.com/"
   },
   "license": "None",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "~0.4.1",
     "matchdep": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3",

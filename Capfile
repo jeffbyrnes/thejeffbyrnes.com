@@ -4,8 +4,11 @@ require 'capistrano/setup'
 # Includes default deployment tasks
 require 'capistrano/deploy'
 
+# Need NPM to use Grunt
+require 'capistrano/npm'
+
 # Include Grunt tasks
-# require 'capistrano/grunt'
+require 'capistrano/grunt'
 
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
