@@ -2,7 +2,7 @@ module.exports = (grunt) ->
   "use strict"
 
   # Load all grunt tasks
-  require("matchdep").filterDev("grunt-*").forEach grunt.loadNpmTasks
+  require("matchdep").filter("grunt-*").forEach grunt.loadNpmTasks
 
   # Project configuration
   grunt.initConfig
