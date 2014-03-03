@@ -68,10 +68,10 @@
                     $username       = 'berkleebassist';
                     $user_id        = '79697399@N00';
                     $photoset_id    = '72157629119921020'; // 'Diving the Deep'
-                    $jump_to        = NULL;
+                    $jump_to        = null;
                     $safe_search    = 1; // show only safe content
                     $privacy_filter = 1; // show only public photos
-                    $extras         = NULL;
+                    $extras         = null;
                     $per_page       = 6;
 
                     // Get 6 photos from a particular photoset + its metadata
