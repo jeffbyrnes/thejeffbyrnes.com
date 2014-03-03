@@ -6,5 +6,5 @@ group :development do
     gem 'capistrano-npm', '~> 0.0.5'
     gem 'capistrano-grunt', '~> 0.0.4'
     # gem 'capistrano-deploytags'
-    # gem 'dogapi', '>= 1.3.0'
+    gem 'dogapi', '>= 1.3.0'
 end
