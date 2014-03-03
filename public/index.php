@@ -155,9 +155,6 @@
         ga('send', 'pageview');
     </script>
 
-    <!-- Mint statistics -->
-    <!-- <script src="/mint/?js"></script> -->
-
     <script>
         var GoSquared = {};
         GoSquared.acct = "GSN-085834-Q";
