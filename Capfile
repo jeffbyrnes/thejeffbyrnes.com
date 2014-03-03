@@ -10,6 +10,9 @@ require 'capistrano/npm'
 # Include Grunt tasks
 require 'capistrano/grunt'
 
+# Use deploy-tagger to tag releases
+require 'cap-deploy-tagger'
+
 # Use Datadog to notice deployments
 require 'capistrano/datadog'
 

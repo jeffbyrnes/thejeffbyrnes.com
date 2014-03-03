@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    cap-deploy-tagger (0.0.2)
     capistrano (3.1.0)
       i18n
       rake (>= 10.0.0)
@@ -53,6 +54,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cap-deploy-tagger (~> 0.0.2)
   capistrano (~> 3.0)
   capistrano-grunt (~> 0.0.4)
   capistrano-npm (~> 0.0.5)

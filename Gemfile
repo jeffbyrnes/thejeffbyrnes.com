@@ -5,6 +5,6 @@ group :development do
     gem 'capistrano', '~> 3.0'
     gem 'capistrano-npm', '~> 0.0.5'
     gem 'capistrano-grunt', '~> 0.0.4'
-    # gem 'capistrano-deploytags'
+    gem 'cap-deploy-tagger', '~> 0.0.2'
     gem 'dogapi', '>= 1.3.0'
 end
