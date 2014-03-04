@@ -9,6 +9,8 @@ set :datadog_api_key, '3a10dbd29a7e52f9f75c76b7951564a7'
 set :linked_dirs, %w{public/.flickr-cache node_modules}
 
 set :rbenv_ruby, '2.1.0'
+set :default_env, path: '~/.rbenv/shims:~/.rbenv/bin:$PATH'
+set :rbenv_map_bins, %w(rake gem bundle ruby compass sass jshint)
 
 # Ensure Grunt runs the `grunt release` command
 set :grunt_tasks, 'release'
