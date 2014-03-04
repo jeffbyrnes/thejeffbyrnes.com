@@ -13,6 +13,7 @@ require 'capistrano/grunt'
 # Ruby (via rbenv) is needed for Compass etc.
 require 'capistrano/rbenv'
 require 'capistrano/rbenv/maintenance'
+require 'capistrano/bundler'
 
 # Use deploy-tagger to tag releases
 require 'cap-deploy-tagger'
