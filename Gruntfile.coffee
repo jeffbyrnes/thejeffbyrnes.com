@@ -30,10 +30,16 @@ module.exports = (grunt) ->
       prod:
         options:
           environment: "production"
+          outputStyle: "compressed"
+          noLineComments: true
 
       dev:
         options:
           environment: "development"
+          outputStyle: "expanded"
+          debugInfo: true
+          # Doesn't work in current Compass alpha
+          # sourcemap: true
 
     # Watch files for changes
     watch:
