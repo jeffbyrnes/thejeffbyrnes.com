@@ -14,8 +14,6 @@ module.exports = (grunt) ->
     publicDir: "public"
     sourceStyleDir: "<%= publicDir %>/_scss"
     releaseStyleDir: "<%= publicDir %>/css"
-    sourceJSDir: "<%= publicDir %>/lib"
-    releaseJSDir: "<%= publicDir %>/js"
 
     # Delete generated files
     clean: ["<%= releaseStyleDir %>"]
@@ -26,35 +24,6 @@ module.exports = (grunt) ->
         'max_line_length':
           'level': 'ignore'
       gruntfile: ["Gruntfile.coffee"]
-
-    # Concatenate JS files
-    concat:
-      options:
-        banner: "<%= banner %>"
-        stripBanners: true
-
-      dist:
-        src: [
-          # Follows Bootstrap's makefile for the order
-          "shared/bower_components/modernizr/modernizr.js",
-          "<%= sourceJSDir %>/plugins.js",
-          "<%= sourceJSDir %>/main.js"
-        ]
-        dest: "<%= releaseJSDir %>/main.js"
-
-    # Minify JS w/ Uglify.js
-    uglify:
-      options:
-        banner: "<%= banner %>"
-
-      dist:
-        src: "<%= concat.dist.dest %>"
-        dest: "<%= releaseJSDir %>/main.js"
-
-    # Lint JS using JSHint
-    jshint:
-      lib:
-        src: "<%= sourceJSDir %>/**/*.js"
 
     # Compile Sass into CSS
     compass:
@@ -72,10 +41,6 @@ module.exports = (grunt) ->
         files: "<%= coffeelint.gruntfile %>"
         tasks: ["coffeelint"]
 
-      js:
-        files: "<%= jshint.lib.src %>"
-        tasks: ["js"]
-
       compass:
         files: ["<%= sourceStyleDir %>/*.scss"]
         tasks: ["compass:dev"]
@@ -88,7 +53,6 @@ module.exports = (grunt) ->
 
 
   # Default task.
-  grunt.registerTask "default", ["js", "compass:dev"]
-  grunt.registerTask "release", ["clean", "js", "uglify", "compass:prod"]
-  grunt.registerTask "js", ["jshint", "concat"]
+  grunt.registerTask "default", ["compass:dev"]
+  grunt.registerTask "release", ["clean", "compass:prod"]
   grunt.util.linefeed = "\n"
