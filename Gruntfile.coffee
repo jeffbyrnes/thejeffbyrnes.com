@@ -29,11 +29,11 @@ module.exports = (grunt) ->
     compass:
       prod:
         options:
-          environment: "prod"
+          environment: "production"
 
       dev:
         options:
-          environment: "dev"
+          environment: "development"
 
     # Watch files for changes
     watch:

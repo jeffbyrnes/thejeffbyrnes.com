@@ -10,7 +10,7 @@ images_dir = 'public/img'
 javascripts_dir = 'public/js'
 
 # Set various options depending on environment
-if environment != :prod
+if environment != :production
   # Dev output is expanded & has debug info & line comments
   sass_options = { debug_info: true }
   output_style = :expanded
