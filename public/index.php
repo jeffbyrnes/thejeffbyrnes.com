@@ -28,7 +28,7 @@
             <nav>
                 <ul class="social-links clearfix">
                     <li><a class="social-link ir" id="social-facebook" href="http://www.facebook.com/jeffbyrnes" title="Facebook">Facebook</a></li>
-                    <li><a class="social-link ir" id="social-twitter" href="http://twitter.com/berkleebassist" title="Follow me on Twitter">Twitter</a></li>
+                    <li><a class="social-link ir" id="social-twitter" href="http://twitter.com/thejeffbyrnes" title="Follow me on Twitter">Twitter</a></li>
                     <li><a class="social-link ir" id="social-flickr" href="http://www.flickr.com/photos/berkleebassist/" title="Photos on Flickr">Flickr</a></li>
                     <li><a class="social-link ir" id="social-github" href="http://github.com/jeffbyrnes" title="Github">Github</a></li>
                 </ul><!-- end .social-links -->
@@ -117,11 +117,11 @@
             </figure><!-- end .quote -->
 
             <div class="twitter">
-                <a class="twitter-timeline" href="https://twitter.com/berkleebassist" data-widget-id="379704187694481408" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3">Tweets by @berkleebassist</a>
+                <a class="twitter-timeline" href="https://twitter.com/thejeffbyrnes" data-widget-id="379704187694481408" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3">Tweets by @thejeffbyrnes</a>
 
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-                <a class="button" href="http://twitter.com/berkleebassist">@berkleebassist</a>
+                <a class="button" href="http://twitter.com/thejeffbyrnes">@thejeffbyrnes</a>
             </div>
         </div><!-- end .main -->
 
