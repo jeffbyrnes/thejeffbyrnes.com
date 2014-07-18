@@ -1,1 +1,1 @@
-set :deploy_to, "/var/www/#{fetch(:application)}-dev"
+set :deploy_to, "/var/www/dev.#{fetch(:application)}"
