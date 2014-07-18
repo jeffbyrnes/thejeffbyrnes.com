@@ -4,17 +4,6 @@ require 'capistrano/setup'
 # Includes default deployment tasks
 require 'capistrano/deploy'
 
-# Need NPM to use Grunt
-require 'capistrano/npm'
-
-# Include Grunt tasks
-require 'capistrano/grunt'
-
-# Ruby (via rbenv) is needed for Compass etc.
-require 'capistrano/rbenv'
-require 'capistrano/rbenv/maintenance'
-require 'capistrano/bundler'
-
 # Use deploy-tagger to tag releases
 require 'cap-deploy-tagger'
 

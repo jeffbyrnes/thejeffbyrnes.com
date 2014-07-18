@@ -19,3 +19,6 @@ indent_size = 2
 
 [Gruntfile.coffee]
 indent_size = 2
+
+[*.cap]
+indent_size = 2
