@@ -6,7 +6,7 @@ $servers = array(
     // '185.14.184.xxx' => 'thejeffbyrnes.com'
 );
 
-$stats_file_path = $_SERVER['DOCUMENT_ROOT'] . '/../shared/stats.json';
+$stats_file_path = $_SERVER['DOCUMENT_ROOT'] . '/../../../shared/stats.json';
 
 // this script is triggered by this command from the terminal or cron:
 // echo 'time=`uptime`&df=`df -h`" | curl -s -d @- http://domain.com/path/to/script.php
