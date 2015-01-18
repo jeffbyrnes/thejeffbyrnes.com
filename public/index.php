@@ -12,22 +12,6 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-
-    <?php
-    $tz    = new DateTimeZone('America/New_York');
-    $now   = new DateTime('now', $tz);
-    $start = new DateTime('2014-09-10', $tz);
-    $end   = new DateTime('2015-09-11', $tz);
-
-    if (
-      $now->getTimestamp() > $start->getTimestamp() &&
-      $now->getTimestamp() < $end->getTimestamp()
-    ) :
-        ?>
-        <script src="//fightforthefuture.github.io/battleforthenet-widget/widget.min.js" async></script>
-        <?php
-    endif
-    ?>
 </head>
 <body>
     <div class="header-image">
