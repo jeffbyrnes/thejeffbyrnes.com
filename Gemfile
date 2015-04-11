@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'compass',                      '~> 1.0.0.alpha.18'
+gem 'compass',                      '~> 1.0'
 
 group :development do
   gem 'capistrano',                   '~> 3.0'
