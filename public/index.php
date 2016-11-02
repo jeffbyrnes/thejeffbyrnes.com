@@ -44,10 +44,14 @@
                 <h1>I’m skilled in</h1>
 
                 <ul>
+                    <li>Automation</li>
+                    <li>AWS</li>
+                    <li>DevOps</li>
+                    <li>Git</li>
+                    <li>Ruby</li>
+                    <li>PHP</li>
                     <li>HTML5</li>
                     <li>CSS3</li>
-                    <li>PHP</li>
-                    <li>Git</li>
                     <li>MySQL</li>
                 </ul>
 
