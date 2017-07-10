@@ -16,7 +16,7 @@
     "grunt": "^1.0.1",
     "grunt-coffeelint": "^0.0.8",
     "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compass": "^0.7.0",
+    "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-watch": "^0.5.3",
     "jit-grunt": "^0.2.3"
   }
