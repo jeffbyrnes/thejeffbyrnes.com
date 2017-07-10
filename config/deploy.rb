@@ -1,6 +1,5 @@
 set :application, 'thejeffbyrnes.com'
 set :repo_url, 'git@bitbucket.org:jeffbyrnes/thejeffbyrnes.com.git'
-set :scm, :git
 
 server 'aws-jb', user: 'deploy', roles: %w(web app db)
 
