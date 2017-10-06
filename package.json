@@ -14,7 +14,7 @@
   "license": "None",
   "dependencies": {
     "grunt": "^1.0.1",
-    "grunt-coffeelint": "^0.0.8",
+    "grunt-coffeelint": "^0.0.16",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-watch": "^1.0.0",
