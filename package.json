@@ -1,7 +1,7 @@
 {
   "name": "thejeffbyrnes.com",
   "description": "Simple one-page website",
-  "homepage": "http://thejeffbyrnes.com/",
+  "homepage": "https://thejeffbyrnes.com/",
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:jeffbyrnes/thejeffbyrnes.com.git"
@@ -9,7 +9,7 @@
   "author": {
     "name": "Jeff Byrnes",
     "email": "thejeffbyrnes@gmail.com",
-    "url": "http://thejeffbyrnes.com/"
+    "url": "https://thejeffbyrnes.com/"
   },
   "license": "None",
   "dependencies": {

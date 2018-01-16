@@ -30,16 +30,16 @@
 
             <nav>
                 <ul class="social-links clearfix">
-                    <li><a class="social-link ir" id="social-facebook" href="http://www.facebook.com/jeffbyrnes" title="Facebook">Facebook</a></li>
-                    <li><a class="social-link ir" id="social-twitter" href="http://twitter.com/thejeffbyrnes" title="Follow me on Twitter">Twitter</a></li>
-                    <li><a class="social-link ir" id="social-flickr" href="http://www.flickr.com/photos/berkleebassist/" title="Photos on Flickr">Flickr</a></li>
-                    <li><a class="social-link ir" id="social-github" href="http://github.com/jeffbyrnes" title="Github">Github</a></li>
+                    <li><a class="social-link ir" id="social-facebook" href="https://www.facebook.com/jeffbyrnes" title="Facebook">Facebook</a></li>
+                    <li><a class="social-link ir" id="social-twitter" href="https://twitter.com/thejeffbyrnes" title="Follow me on Twitter">Twitter</a></li>
+                    <li><a class="social-link ir" id="social-flickr" href="https://www.flickr.com/photos/berkleebassist/" title="Photos on Flickr">Flickr</a></li>
+                    <li><a class="social-link ir" id="social-github" href="https://github.com/jeffbyrnes" title="Github">Github</a></li>
                 </ul><!-- end .social-links -->
             </nav>
         </header>
 
         <div class="main" role="main">
-            <p class="blurb">Based in Boston since 2002, I attended <a href="http://www.berklee.edu/">Berklee</a>, playing both upright and electric&nbsp;bass.<br>While at school, I ended up gravitating to tech, becoming a developer by the time I finished. I’m also a <a href="http://www.couchsurfing.org/people/jeffbyrnes/">CouchSurfer</a> and a SCUBA&nbsp;diver.</p>
+            <p class="blurb">Based in Boston since 2002, I attended <a href="https://www.berklee.edu/">Berklee</a>, playing both upright and electric&nbsp;bass.<br>While at school, I ended up gravitating to tech, becoming a developer by the time I finished. I’m also a <a href="https://www.couchsurfing.org/people/jeffbyrnes/">CouchSurfer</a> and a SCUBA&nbsp;diver.</p>
 
             <p class="current-job">Currently, I work for <a href="https://darksky.net/">The Dark Sky Company</a>.</p>
 
@@ -60,7 +60,7 @@
 
                 <p>and various other bits and pieces</p>
 
-                <a class="button" href="http://github.com/jeffbyrnes">My GitHub profile</a>
+                <a class="button" href="https://github.com/jeffbyrnes">My GitHub profile</a>
             </section><!-- end .skills -->
 
             <div class="photos">
@@ -90,7 +90,7 @@
                     foreach ($photos['photoset']['photo'] as $photo) {
                         echo '<li class="flickr-thumb">';
                         // print out a link to the photo page, attaching the id of the photo
-                        echo '<a href="http://www.flickr.com/photos/berkleebassist/' . $photo['id'] . '" title="View ' . $photo['title'] . '">';
+                        echo '<a href="https://www.flickr.com/photos/berkleebassist/' . $photo['id'] . '" title="View ' . $photo['title'] . '">';
 
                         // This next line uses buildPhotoURL to construct the location of our image,
                         // and we want the 'Large Square' size
@@ -110,7 +110,7 @@
 
                 <h1><?php echo $photoset_info['description']; ?></h1>
 
-                <a class="button" href="http://www.flickr.com/photos/berkleebassist/">More photos on Flickr</a>
+                <a class="button" href="https://www.flickr.com/photos/berkleebassist/">More photos on Flickr</a>
             </div><!-- end .photos -->
 
             <figure class="quote">
@@ -128,7 +128,7 @@
 
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-                <a class="button" href="http://twitter.com/thejeffbyrnes">@thejeffbyrnes</a>
+                <a class="button" href="https://twitter.com/thejeffbyrnes">@thejeffbyrnes</a>
             </div>
         </div><!-- end .main -->
 
