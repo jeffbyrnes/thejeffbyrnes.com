@@ -14,5 +14,8 @@ require 'cap-deploy-tagger'
 # Use Datadog to notice deployments
 require 'capistrano/datadog'
 
+# Add tasks to purge Cloudflare cache
+require 'capistrano/cloudflare'
+
 # Loads custom tasks from `lib/capistrano/tasks` if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
