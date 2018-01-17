@@ -12,5 +12,5 @@ set :cloudflare_options,
     email: 'thejeffbyrnes@gmail.com',
     api_key: ENV['CLOUDFLARE_TOKEN']
 
-before 'deploy:finishing', 'grunt:default'
+before 'deploy:finished', 'grunt:default'
 after 'deploy:finished', 'cloudflare:cache:purge'
