@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Jeff Byrnes, web developer, bassist, Mac Tech</title>
+    <title>Jeff Byrnes, ops engineer & bassist</title>
     <meta name="description" content="">
 
     <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -25,7 +25,7 @@
         <header class="site-header">
             <hgroup>
                 <h1>Hey there, I’m&nbsp;Jeff&nbsp;Byrnes</h1>
-                <h2>I’m a web developer, bassist, and Mac Tech.</h2>
+                <h2>I’m an ops engineer and bassist.</h2>
             </hgroup>
 
             <nav>
