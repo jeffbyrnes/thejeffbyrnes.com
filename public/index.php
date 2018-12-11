@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="header-image">
-        <img src="/img/avatar@2x.png" alt="Jeff Byrnes' avatar" width="52" height="61">
+        <img src="/img/avatar.png" alt="Jeff Byrnes' avatar" width="52" height="61">
     </div>
 
     <div class="container">
