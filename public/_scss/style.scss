@@ -3,6 +3,8 @@ $dark-blue:         #3f5063;
 $grey-brown:        #7a7365;
 $orange:            #f27d00;
 $red:               #e53600;
+$medium-green:      #11B59A;
+$light-green:       #47DC5A;
 $medium-blue:       #37669e;
 $light-blue:        #4783cc;
 $faded-medium-blue: #99b1cc;
@@ -42,7 +44,7 @@ $photos-width-mobile: ($photo-width-mobile + 16px) * 3;
 html {
     background: url(/img/bg-noise.jpg) repeat center top;
     // background: #000;
-    border-bottom: 4px solid $red;
+    border-bottom: 4px solid $medium-green;
 }
 
 hr {
@@ -82,7 +84,7 @@ hr {
     background-repeat: no-repeat;
     background-position: -2px bottom;
     @include background-size(contain);
-    border-bottom: 4px solid $red;
+    border-bottom: 4px solid $medium-green;
     margin-bottom: 27px;
 }
 
@@ -108,7 +110,7 @@ footer h1 {
 .skills h1,
 .quote figcaption,
 footer h2 {
-    color: $orange;
+    color: $light-green;
     font-family: MuseoSlab500, sans-serif;
     font-size: 24px;
     margin: 5px 0 29px;
@@ -179,7 +181,7 @@ footer h2 {
     }
 
     li {
-        color: $red;
+        color: $medium-green;
         font-family: MuseoSlab700, sans-serif;
         font-size: 14px;
         display: inline;
