@@ -50,12 +50,10 @@
                     <li>Automation</li>
                     <li>AWS</li>
                     <li>DevOps</li>
+                    <li>Chef</li>
+                    <li>Terraform</li>
                     <li>Git</li>
                     <li>Ruby</li>
-                    <li>PHP</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>MySQL</li>
                 </ul>
 
                 <p>and various other bits and pieces</p>
