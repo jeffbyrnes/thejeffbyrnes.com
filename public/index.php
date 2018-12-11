@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-
-    <!-- FightForTheFuture BattleForTheNet Day of Action 2017 widget -->
-    <script src="https://widget.battleforthenet.com/widget.js" async></script>
 </head>
 <body>
     <div class="header-image">
