@@ -4,7 +4,7 @@
   "homepage": "https://thejeffbyrnes.com/",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:jeffbyrnes/thejeffbyrnes.com.git"
+    "url": "git@github.com:jeffbyrnes/thejeffbyrnes.com.git"
   },
   "author": {
     "name": "Jeff Byrnes",

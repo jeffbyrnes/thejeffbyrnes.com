@@ -31,9 +31,3 @@ publish
 .idea
 /shared
 node_modules
-/public/css
-/public/js
-/public/.flickr-cache
-
-.tags*
-.capistrano

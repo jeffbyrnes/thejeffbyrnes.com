@@ -1,5 +1,5 @@
 # Website of Jeff Byrnes
 
-A simple website, initially hand-written, eventually driven by [Statamic](http://statamic.com), a flat-file PHP-based CMS.
+A simple, hand-written website.
 
-Design by Dan Perrera & Amy Parker of [The Outfit](http://fromtheoutfit.com).
+Design by [Dan Perrera & Amy Parker](https://perrera.com).
