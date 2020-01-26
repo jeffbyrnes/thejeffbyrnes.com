@@ -5,12 +5,12 @@
 // iPhone
 @media only screen and (max-device-width: 480px) {
     .site-header {
-        background-image: url(/img/collage-318x96@2x.png);
+        background-image: url('../img/collage-318x96@2x.png');
         padding-bottom: 112px;
     }
 
     .social-link {
-        background: url(/img/social-icons@2x.png) no-repeat 0 0;
+        background: url('../img/social-icons@2x.png') no-repeat 0 0;
         background-size: 147px 32px;
     }
 
@@ -35,7 +35,7 @@
 
     .quote {
         blockquote {
-            background: url(/img/quote-left@2x.png) no-repeat 10px top;
+            background: url('../img/quote-left@2x.png') no-repeat 10px top;
             background-size: (82px * .75) (71px * .75);
             font-size: 50px * $mobile-shrink-factor;
             padding: 0 0 0 (71px * .75);
@@ -51,7 +51,7 @@
     }
 
     .social-link {
-        background: url(/img/social-icons.png) no-repeat 0 0;
+        background: url('../img/social-icons.png') no-repeat 0 0;
     }
 
     .skills ul:before,
@@ -64,7 +64,7 @@
 @media only screen and (min-width: 1025px) {
     .skills ul:before,
     .skills ul:after {
-        background-image: url(/img/bg-lines.png);
+        background-image: url('../img/bg-lines.png');
         content: "";
         position: absolute;
         top: 0;

@@ -42,7 +42,7 @@ $photos-width-mobile: ($photo-width-mobile + 16px) * 3;
    ========================================================================== */
 
 html {
-    background: url(/img/bg-noise.jpg) repeat center top;
+    background: url('../img/bg-noise.jpg') repeat center top;
     // background: #000;
     border-bottom: 4px solid $medium-green;
 }
@@ -68,7 +68,7 @@ hr {
  */
 .header-image,
 .footer-image {
-    background: url(/img/bg-lines.png) repeat center top;
+    background: url('../img/bg-lines.png') repeat center top;
     text-align: center;
     height: 55px;
 }
@@ -279,8 +279,8 @@ footer h2 {
 .quote {
     blockquote {
         background:
-            url(/img/quote-left.png)  no-repeat center left,
-            url(/img/quote-right.png) no-repeat center right;
+            url('../img/quote-left.png')  no-repeat center left,
+            url('../img/quote-right.png') no-repeat center right;
         font-family: OpenSansLight, sans-serif;
         font-size: 50px;
         line-height: 1.08;
