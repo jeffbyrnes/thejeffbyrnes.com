@@ -60,50 +60,15 @@
 
             <div class="photos">
                 <ul class="flickr-photos clearfix">
-                    <?php
-                    $flickr_api_key = '62bed203339ef3c90ad78eba543be3cd';
+                    <li class="flickr-thumb"><a href="https://www.flickr.com/photos/berkleebassist/2275762011" title="View Lots of sharks"><img src="https://farm3.static.flickr.com/2210/2275762011_a49146ca15_q.jpg" alt="Lots of sharks">
+                        </a></li><li class="flickr-thumb"><a href="https://www.flickr.com/photos/berkleebassist/2275761529" title="View More sharks"><img src="https://farm3.static.flickr.com/2067/2275761529_b77753ef34_q.jpg" alt="More sharks">
+                        </a></li><li class="flickr-thumb"><a href="https://www.flickr.com/photos/berkleebassist/2275761309" title="View Lemon shark"><img src="https://farm3.static.flickr.com/2049/2275761309_6a093551a2_q.jpg" alt="Lemon shark">
+                        </a></li><li class="flickr-thumb"><a href="https://www.flickr.com/photos/berkleebassist/2275760991" title="View Another lemon shark"><img src="https://farm3.static.flickr.com/2136/2275760991_e06b37665b_q.jpg" alt="Another lemon shark">
+                        </a></li><li class="flickr-thumb"><a href="https://www.flickr.com/photos/berkleebassist/2276552598" title="View Black-tipped Coral Shark"><img src="https://farm3.static.flickr.com/2272/2276552598_e6d564c4ed_q.jpg" alt="Black-tipped Coral Shark">
+                        </a></li><li class="flickr-thumb"><a href="https://www.flickr.com/photos/berkleebassist/2276552382" title="View Scorpion Fish"><img src="https://farm3.static.flickr.com/2140/2276552382_6d014f79b5_q.jpg" alt="Scorpion Fish">
+                        </a></li>                </ul>
 
-                    require_once('inc/phpFlickr.php');
-                    $f = new phpFlickr($flickr_api_key);
-
-                    // Enable filesystem-based caching
-                    $f->enableCache('fs', $_SERVER['DOCUMENT_ROOT'] . '/.flickr-cache');
-
-                    $username       = 'berkleebassist';
-                    $user_id        = '79697399@N00';
-                    $photoset_id    = '72157629119921020'; // 'Diving the Deep'
-                    $jump_to        = null;
-                    $safe_search    = 1; // show only safe content
-                    $privacy_filter = 1; // show only public photos
-                    $extras         = null;
-                    $per_page       = 6;
-
-                    // Get 6 photos from a particular photoset + its metadata
-                    $photos        = $f->photosets_getPhotos($photoset_id, $extras, $privacy_filter, $per_page);
-                    $photoset_info = $f->photosets_getInfo($photoset_id);
-
-                    foreach ($photos['photoset']['photo'] as $photo) {
-                        echo '<li class="flickr-thumb">';
-                        // print out a link to the photo page, attaching the id of the photo
-                        echo '<a href="https://www.flickr.com/photos/berkleebassist/' . $photo['id'] . '" title="View ' . $photo['title'] . '">';
-
-                        // This next line uses buildPhotoURL to construct the location of our image,
-                        // and we want the 'Large Square' size
-                        // It also gives the image an alt attribute of the photo's title
-                        echo '<img src="'
-                                . $f->buildPhotoURL($photo, 'large_square')
-                                .  '" alt="'
-                                . $photo['title']
-                                . '">
-                        ';
-
-                        // close link & list item
-                        echo '</a></li>';
-                    }
-                    ?>
-                </ul>
-
-                <h1><?php echo $photoset_info['description']; ?></h1>
+                <h1>SCUBA diving in the Caribbean and the South Pacific</h1>
 
                 <a class="button" href="https://www.flickr.com/photos/berkleebassist/">More photos on Flickr</a>
             </div><!-- end .photos -->
@@ -142,7 +107,7 @@
     </div><!-- end .container -->
 
     <div class="footer-image ir">
-        <p>© 2012–<?php echo date('Y'); ?> Jeff Byrnes</p>
+        <p>© 2012–<script>document.write(new Date().getFullYear())</script> Jeff Byrnes</p>
     </div>
 
     <script>
