@@ -12,6 +12,9 @@
     "url": "https://thejeffbyrnes.com/"
   },
   "license": "None",
+  "stylelint": {
+    "extends": "stylelint-config-standard-scss"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
@@ -23,6 +26,9 @@
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-watch": "^1.1.0",
-    "jit-grunt": "^0.10.0"
+    "jit-grunt": "^0.10.0",
+    "stylelint": "^10.0.0",
+    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-scss": "^3.13.0"
   }
 }
