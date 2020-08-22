@@ -31,3 +31,6 @@ publish
 .idea
 /shared
 node_modules
+
+# Additional ignores
+package-lock.json
