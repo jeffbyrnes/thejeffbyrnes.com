@@ -3,8 +3,8 @@ $dark-blue:         #3f5063;
 $grey-brown:        #7a7365;
 $orange:            #f27d00;
 $red:               #e53600;
-$medium-green:      #11B59A;
-$light-green:       #47DC5A;
+$medium-green:      #11b59a;
+$light-green:       #47dc5a;
 $medium-blue:       #37669e;
 $light-blue:        #4783cc;
 $faded-medium-blue: #99b1cc;
@@ -17,7 +17,7 @@ $light-white:       #f4f3ef;
 $total-width:        940px;
 // Decimal factor by which to shrink things
 // Multiply by this to decrease text, etc., to fit
-$mobile-shrink-factor: .6;
+$mobile-shrink-factor: 0.6;
 
 // Widths of other elements
 $pattern-width:      260px;
@@ -43,7 +43,6 @@ $photos-width-mobile: ($photo-width-mobile + 16px) * 3;
 
 html {
   background: url('../img/bg-noise.jpg') repeat center top;
-  // background: #000;
   border-bottom: 4px solid $medium-green;
 }
 
@@ -295,8 +294,6 @@ footer h2,
   width: $photos-width;
 
   img {
-    // border: 1px solid $medium-grey;
-    // @include single-box-shadow(0, 0, 0, 3px, inset, #fff);
     border: 3px solid #fff;
 
     @include single-box-shadow(0, 0, 0, 1px, $medium-grey);
