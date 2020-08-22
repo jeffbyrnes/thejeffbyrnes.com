@@ -33,7 +33,9 @@ $photos-width-mobile: ($photo-width-mobile + 16px) * 3;
 
 @import "webfonts";
 @import "h5bp-normalize";
+@import "h5bp-main";
 @import "compass/css3";
+@import "compass/typography/text/replacement";
 
 /* ==|== primary styles =====================================================
    Author: Jeff Byrnes
@@ -43,6 +45,42 @@ html {
   background: url('../img/bg-noise.jpg') repeat center top;
   // background: #000;
   border-bottom: 4px solid $medium-green;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $dark-blue;
+  font-family: OpenSansRegular, sans-serif;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a {
+  color: $light-blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #06e;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover,
+a:active {
+  outline: 0;
 }
 
 hr {
@@ -74,6 +112,8 @@ hr {
 
 .footer-image {
   margin-top: 60px;
+
+  @include hide-text();
 }
 
 /**
@@ -137,6 +177,7 @@ footer h2,
 
   @include border-radius(15px);
   @include background-clip(padding-box);
+  @include hide-text();
 }
 
 .social-link:hover {
