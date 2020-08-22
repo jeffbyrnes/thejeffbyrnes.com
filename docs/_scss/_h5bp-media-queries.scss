@@ -4,80 +4,79 @@
 
 // iPhone
 @media only screen and (max-device-width: 480px) {
-    .site-header {
-        background-image: url('../img/collage-318x96@2x.png');
-        padding-bottom: 112px;
-    }
+  .site-header {
+    background-image: url('../img/collage-318x96@2x.png');
+    padding-bottom: 112px;
+  }
 
-    .social-link {
-        background: url('../img/social-icons@2x.png') no-repeat 0 0;
-        background-size: 147px 32px;
-    }
+  .social-link {
+    background: url('../img/social-icons@2x.png') no-repeat 0 0;
+    background-size: 147px 32px;
+  }
 
-    .site-header h1,
-    footer h1 {
-        font-size: (80px * $mobile-shrink-factor);
-    }
+  footer h1,
+  .site-header h1 {
+    font-size: (80px * $mobile-shrink-factor);
+  }
 
-    .flickr-photos {
-        width: $photos-width-mobile;
+  .flickr-photos {
+    width: $photos-width-mobile;
 
-        img {
-            width: $photo-width-mobile;
-        }
+    img {
+      width: $photo-width-mobile;
     }
+  }
 
-    .photos {
-        h1 {
-            width: $photos-width-mobile - 4px;
-        }
+  .photos {
+    h1 {
+      width: $photos-width-mobile - 4px;
     }
+  }
 
-    .quote {
-        blockquote {
-            background: url('../img/quote-left@2x.png') no-repeat 10px top;
-            background-size: (82px * .75) (71px * .75);
-            font-size: 50px * $mobile-shrink-factor;
-            padding: 0 0 0 (71px * .75);
-            width: 300px - (71px * .75);
-        }
+  .quote {
+    blockquote {
+      background: url('../img/quote-left@2x.png') no-repeat 10px top;
+      background-size: (82px * 0.75) (71px * 0.75);
+      font-size: 50px * $mobile-shrink-factor;
+      padding: 0 0 0 (71px * 0.75);
+      width: 300px - (71px * 0.75);
     }
+  }
 }
 
 // iPad & desktop
 @media only screen and (min-device-width: 768px) {
-    .site-header {
-        padding-bottom: 1rem;
-    }
+  .site-header {
+    padding-bottom: 1rem;
+  }
 
-    .social-link {
-        background: url('../img/social-icons.png') no-repeat 0 0;
-    }
+  .social-link {
+    background: url('../img/social-icons.png') no-repeat 0 0;
+  }
 
-    .skills ul:before,
-    .skills ul:after {
-        width: 25%;
-    }
+  .skills ul::before,
+  .skills ul::after {
+    width: 25%;
+  }
 }
 
 // Desktop
 @media only screen and (min-width: 1025px) {
-    .skills ul:before,
-    .skills ul:after {
-        background-image: url('../img/bg-lines.png');
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: percentage($pattern-width / $total-width);
-    }
+  .skills ul::before,
+  .skills ul::after {
+    background-image: url('../img/bg-lines.png');
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: percentage($pattern-width / $total-width);
+  }
 
-    .skills ul:before {
-        left: percentage($pattern-margin / $total-width);
-    }
+  .skills ul::before {
+    left: percentage($pattern-margin / $total-width);
+  }
 
-    .skills ul:after {
-        right: percentage($pattern-margin / $total-width);
-    }
-
+  .skills ul::after {
+    right: percentage($pattern-margin / $total-width);
+  }
 }
