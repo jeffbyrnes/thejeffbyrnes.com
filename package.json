@@ -27,7 +27,7 @@
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-watch": "^1.1.0",
     "jit-grunt": "^0.10.0",
-    "stylelint": "^10.0.0",
+    "stylelint": "^13.6.1",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-scss": "^3.13.0"
   }
