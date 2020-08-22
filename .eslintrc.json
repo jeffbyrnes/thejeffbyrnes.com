@@ -1,5 +1,6 @@
 {
   "env": {
+    "browser": true,
     "es6": true,
     "node": true
   },
@@ -8,7 +9,9 @@
   ],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "XMLHttpRequest": "readonly",
+    "ActiveXObject": "readonly"
   },
   "parserOptions": {
     "ecmaVersion": 2018
