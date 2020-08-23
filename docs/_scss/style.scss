@@ -82,6 +82,10 @@ a:active {
   outline: 0;
 }
 
+h1 {
+  font-family: OpenSansLight, sans-serif;
+}
+
 hr {
   background-color: $medium-grey;
   color: $medium-grey;
@@ -141,7 +145,6 @@ footer h2,
 footer h1,
 .site-header h1 {
   color: $dark-blue;
-  font-family: OpenSansLight, sans-serif;
   font-size: 5rem;
   margin: 2.8125rem 0 0.3125rem;
 }
@@ -149,7 +152,8 @@ footer h1,
 footer h2,
 .site-header h2,
 .skills h1,
-.quote figcaption {
+.quote figcaption,
+.np-heading {
   color: $light-green;
   font-family: MuseoSlab500, sans-serif;
   font-size: 1.5rem;
@@ -282,7 +286,7 @@ footer h2,
   margin: 3.75rem 0 4.6875rem;
 
   h1 {
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-weight: normal;
   }
 }
@@ -358,11 +362,11 @@ footer {
   }
 }
 
+.now-playing-container {
+  padding: 2.3125rem 0;
+}
+
 .now-playing {
-  position: absolute;
-  right: 20px;
-  top: calc(50vh - (min(20vw, calc(100vh - 30px)) / 2, 400px));
-  z-index: 1001;
   opacity: 1;
   border: 0;
 
@@ -396,16 +400,7 @@ footer {
       display: block;
       letter-spacing: -0.01em;
       font-weight: 500;
-      line-height: 180%;
-      text-align: right;
-    }
-
-    .np-heading {
-      font-size: 0.75rem;
-      font-weight: 900;
-      opacity: 0.5;
-      text-transform: uppercase;
-      letter-spacing: 0.11em;
+      line-height: 1.8;
     }
 
     .np-roon {
