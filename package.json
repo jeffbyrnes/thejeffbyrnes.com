@@ -12,23 +12,19 @@
     "url": "https://thejeffbyrnes.com/"
   },
   "license": "None",
-  "stylelint": {
-    "extends": "stylelint-config-standard-scss"
-  },
   "devDependencies": {
     "eslint": "^7.7.0",
-    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-watch": "^1.1.0",
     "jit-grunt": "^0.10.0",
     "stylelint": "^13.6.1",
-    "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-scss": "^3.13.0"
   }
 }
