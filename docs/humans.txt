@@ -1,19 +1,14 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+# humanstxt.org/
+# The humans responsible & technology colophon
 
+# TEAM
 
-/* TEAM */
-  Developer/Owner: Jeff Byrnes
-  Site: https://thejeffbyrnes.com/
-  Twitter: thejeffbyrnes
-  Location: Cambridge, MA
+  Jeff Byrnes -- Developer & Owner/Operator -- https://better.boston/@jeffbyrnes
+  Amy Parker -- Designer -- https://twitter.com/amyhparker
+  Dan Perrera -- Designer -- https://typo.social/@dan
 
-  Designer: Amy Parker, Height & Hands
-  Site: https://foredesign.co
-  Twitter: foredesignco
-  Location: Boston, MA
+# THANKS
 
-/* CREDIT */
   Social media icons by Icons8: https://icons8.com
 
     * Mastodon: https://icons8.com/icon/SjG6BzZwdP2-/mastodon
@@ -22,33 +17,7 @@
     * GitHub: https://icons8.com/icon/3tC9EQumUAuq/github"
     * Twitter: https://icons8.com/icon/60452/twitter-circled"
 
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software: Sublime Text, LiveReload, Photoshop, MAMP, Git
+# TECHNOLOGY COLOPHON
 
-
-
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

@@ -1,0 +1,12 @@
+{
+  "short_name": "thejeffbyrnes",
+  "name": "Jeff Byrnes",
+  "icons": [{
+    "src": "img/icon.jpg",
+    "type": "image/jpeg",
+    "sizes": "360x360"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#fafafa",
+  "theme_color": "#11b59a"
+}
