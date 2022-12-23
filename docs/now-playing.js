@@ -39,7 +39,7 @@ async function getNowPlaying () {
 function renderNowPlaying (track) {
   const currently = track['@attr'] && track['@attr'].nowplaying === 'true'
   const imageurl = track.image.slice(-1)[0]['#text']
-  const date = new Date(track.date.uts * 1000);
+  const date = new Date(track.date.uts * 1000)
   const datetime = date.toLocaleString()
 
   let nowPlaying = null
