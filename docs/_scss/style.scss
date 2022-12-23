@@ -60,16 +60,16 @@ textarea {
    ========================================================================== */
 
 a {
-  color: $light-blue;
+  color: $medium-green;
   text-decoration: none;
 }
 
 a:visited {
-  color: #551a8b;
+  color: $medium-blue;
 }
 
 a:hover {
-  color: #06e;
+  color: $light-green;
 }
 
 a:focus {
@@ -252,7 +252,7 @@ footer h2,
 
 .button,
 .button:visited {
-  background-color: $light-blue;
+  background-color: $medium-green;
   color: $light-white;
   display: inline-block;
   font-size: 0.75rem;
