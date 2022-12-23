@@ -164,7 +164,7 @@ footer h2,
   border-top: 2px solid $medium-grey;
   margin: 0 auto;
   padding: 1.125rem 0.625rem 0;
-  width: (2rem * 4) + (0.5rem * 3);
+  width: (2rem * 5) + (0.5rem * 4);
 
   li {
     float: left;
@@ -172,7 +172,6 @@ footer h2,
 }
 
 .social-link {
-  // background-color: $light-blue;
   display: block;
   margin-right: 0.5rem;
   width: 2rem;
@@ -187,16 +186,20 @@ footer h2,
   @include box-shadow(rgba(black, 0.5) 2px 2px 10px);
 }
 
+#social-facebook {
+  background: center / contain no-repeat url('../img/social-facebook@512x512.png');
+}
+
 #social-twitter {
-  background-position: -2.375rem 0;
+  background: center / contain no-repeat url('../img/social-twitter@512x512.png');
 }
 
 #social-flickr {
-  background-position: -4.8125rem 0;
+  background: center / contain no-repeat url('../img/social-flickr@86x86.png');
 }
 
 #social-github {
-  background-position: -7.25rem 0;
+  background: center / contain no-repeat url('../img/social-github@512x512.png');
   margin-right: 0;
 }
 

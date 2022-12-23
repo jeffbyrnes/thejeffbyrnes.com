@@ -13,6 +13,15 @@
   Twitter: foredesignco
   Location: Boston, MA
 
+/* CREDIT */
+  Social media icons by Icons8: https://icons8.com
+
+    * Mastodon: https://icons8.com/icon/SjG6BzZwdP2-/mastodon
+    * Facebook: https://icons8.com/icon/60440/facebook-circled"
+    * Flickr: https://icons8.com/icon/rKHhlUGSZst9/flickr"
+    * GitHub: https://icons8.com/icon/3tC9EQumUAuq/github"
+    * Twitter: https://icons8.com/icon/60452/twitter-circled"
+
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
