@@ -5,7 +5,7 @@ const LFM_API = 'https://ws.audioscrobbler.com/2.0/'
 const LFM_KEY = 'ce8a26c8204cd9994cb27278d682efe3'
 const LFM_USER = 'jeffbyrnes'
 
-async function getNowPlaying () {
+async function getNowPlaying() {
   const recentTracksUrl = `${LFM_API}?method=user.getrecenttracks&user=${LFM_USER}&api_key=${LFM_KEY}+&format=json&limit=1`
   let httpRequest
 
@@ -36,7 +36,7 @@ async function getNowPlaying () {
   }
 }
 
-function renderNowPlaying (track) {
+function renderNowPlaying(track) {
   const currently = track['@attr'] && track['@attr'].nowplaying === 'true'
   const imageurl = track.image.slice(-1)[0]['#text']
   const date = new Date(track.date.uts * 1000)
