@@ -31,7 +31,7 @@ module.exports = (grunt) => {
       dev: {
         options: {
           // Doesn't work in current Compass alpha
-          // sourcemap: true,
+          sourcemap: true,
           environment: 'development',
           outputStyle: 'expanded',
           debugInfo: true
