@@ -147,6 +147,12 @@ hr {
     background: color-mix(in srgb, var(--color), transparent 60%);
   }
 
+  .currency,
+  .percentage {
+    white-space: pre;
+    font-family: monospace;
+  }
+
   .salary-amount {
     text-align: end;
   }
