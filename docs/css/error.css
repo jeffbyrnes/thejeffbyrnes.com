@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Error pages (401, 403, 404, 500, 503)
+   Self-contained: no web fonts or images, so it renders even when the rest
+   of the site's assets are unavailable.
+   ========================================================================== */
+
+html {
+  color: #3f5063;
+  font-family:
+    system-ui, -apple-system, "Segoe UI", roboto, helvetica, arial, sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+h1 span {
+  color: #11b59a;
+}
+
+a {
+  color: #11b59a;
+}
+
+a:hover {
+  color: #47dc5a;
+}
