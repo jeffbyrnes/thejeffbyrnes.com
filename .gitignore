@@ -8,7 +8,6 @@
 *.swp
 *.vi
 *~
-*.sass-cache
 
 # OS or Editor folders
 .DS_Store
@@ -34,4 +33,4 @@ node_modules
 
 # Additional ignores
 package-lock.json
-*.css.map
+.ruby-lsp

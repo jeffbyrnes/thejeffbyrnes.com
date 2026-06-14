@@ -87,6 +87,6 @@ function renderNowPlaying(track) {
   }, 100)
 }
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
   getNowPlaying()
 })
